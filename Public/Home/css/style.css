@@ -1,0 +1,737 @@
+@charset "utf-8";
+/* CSS Document */
+img{ border:0px;}
+a{ text-decoration:none; color:#000;}
+a:hover{ text-decoration:none;}
+li{ list-style:none;}
+.fs{ font-family:"宋体";}
+.fw{ font-family:"微软雅黑";}
+
+
+
+#menu{ position:fixed; top: 50%; width: 6px; z-index: 999; }
+#menu li{ width: 6px; height: 6px; margin-top:15px; }
+#menu li a{ display: block; width: 6px; height: 6px; background: url(../images/dian_01.png) center center no-repeat;}
+#menu li:first-child{ margin-top: 0px; }
+#menu li.active a{ background: url(../images/dian_02.png) center center no-repeat;}
+
+
+/*header*/
+header{ position: fixed; top: 0px; padding-top: 12px; left: 0px; z-index: 999; width: 100%; z-index: 999; background: url(../images/y_mm.png) repeat; }
+.header{ width: 1200px; /*padding-bottom: 1px; background: url(../images/nav_xian.png) bottom center no-repeat;*/}
+.header a{ color: #fff; }
+.header a.logo{ margin:12px 0px 0px 40px; }
+.header nav{ float: left; margin-bottom: -2px; }
+.header nav a{ float:left; padding:0px 17px; line-height: 50px; margin-left: 48px;}
+.header nav a:first-child{ margin-left: 53px;}
+.header nav a:hover,.header nav a.xz{ border-bottom: 3px solid #e68100;}
+.header img{ display: block; margin:1px auto 0px; position: relative; z-index: -1; }
+.header a.rukou{ position: absolute; right: 40px; top: 12px; color: #fff; padding:5px; border: 1px solid #fff; }
+/*footer*/
+.footer{ position: fixed; left: 50%; margin-left: -600px; width: 1200px; bottom:0px; z-index: 999; line-height: 50px; color: #fff;}
+
+.section{ padding-bottom: 20px; overflow: hidden; }
+.mgbg-wrap {
+	position: absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	overflow:hidden;
+	z-index: -1;
+}
+.section .mgbg{
+position: absolute;
+z-index: -2;
+}
+
+.chakanxq{ position: absolute; top: 50%; margin-top: -25px; right: -120px; z-index: 9;}
+.chakanxq a{ display: block; width: 244px; height: 47px; }
+.chakanxq img{ display: block; margin:0; padding:0;}
+
+/*-----------------------------产品---------------------------------*/
+/*第一屏*/
+.section1{ position:relative /* background:url(../images/bgyy1.png) center center no-repeat;*/ }
+.section1 .div1{ width: 1200px; height: 445px;}
+.section1 .div1 .mg1{/*margin-left: 85px;*/ margin-left: 75px;}
+.section1 .div1 .mg2{ position: absolute; left: 394px; top: 94px; }
+.section1 .div1 .mg3{ position: absolute; left: 366px; top: 198px;}
+.section1 .div1 .mg4{ position: absolute; right: 330px; top: 133px; }
+.section1 .div1 .mg5{ position: absolute; left: 360px; top: 235px; }
+.section1 .div1 .mg6{ position: absolute; right: 325px; top: 200px; }
+.section1 .div1 .wenzi_01{ position: absolute; left: 188px; top: 256px; color: #c4c4c4; line-height: 24px; width: 182px; }
+.section1 .div1 .wenzi_01 span{ display: block; width: 100%; text-align: right; font-size: 16px; color: #ffffff; line-height: normal; line-height: 34px; }
+.section1 .div1 .wenzi_02{ position: absolute; right: 124px; top: 180px; color: #c4c4c4; line-height: 24px; width: 182px; }
+.section1 .div1 .wenzi_02 span{ display: block; width: 100%; font-size: 16px; color: #ffffff; line-height: normal; line-height: 34px;  }
+
+/*第二屏*/
+.section2{/* background: url(../images/bgxj1.png) center center no-repeat; */}
+.section2 .div1{ width: 1200px; height: 476px; }
+.section2 .div1 .mg1{ position: absolute;/* left: 84px;*/ left: 74px; top: 0px; }
+.section2 .div1 .mg2{ position: absolute; left: 433px; top: 60px; }
+.section2 .div1 .mg3{ position: absolute; left: 319px; top: 317px; }
+.section2 .div1 .mg4{ position: absolute; right: 322px; top: 87px; }
+.section2 .div1 .mg5{ position: absolute; left: 307px; top: 338px; }
+.section2 .div1 .mg6{ position: absolute; right: 315px; top: 130px; }
+.section2 .div1 dl dt{ color: #ffffff; font-size: 16px; line-height: 32px; }
+.section2 .div1 dl dd{ color: #c4c4c4; line-height: 22px; }
+.section2 .div1 dl.wenzi_01{ width: 182px; position: absolute; left: 109px; top: 325px; }
+.section2 .div1 dl.wenzi_01 dt{ width: 100%; text-align: right; }
+.section2 .div1 dl.wenzi_02{ width: 178px; position: absolute; right: 127px; top: 123px; }
+
+/*第三屏*/
+.section3{/* background: url(../images/bgdc1.png) center center no-repeat; */}
+.section3 .div1{ width: 1200px; height: 470px; }
+.section3 .div1 .mg1{ position: absolute;/* left: 84px;*/ left: 74px; top: 0px; }
+.section3 .div1 .mg2{ position: absolute; left: 505px; top: 29px; }
+.section3 .div1 .mg3{ position: absolute; left: 400px; top: 331px; }
+.section3 .div1 .mg4{ position: absolute; right: 407px; top:52px; }
+.section3 .div1 .mg5{ position: absolute; left: 390px; top: 354px; }
+.section3 .div1 .mg6{ position: absolute; right: 398px; top: 128px; }
+.section3 .div1 dl dt{ color: #ffffff; font-size: 16px; line-height: 52px; }
+.section3 .div1 dl dd{ color: #c4c4c4; line-height: 22px; }
+.section3 .div1 dl.wenzi_01{ width: 180px; position: absolute; left: 199px; top: 317px; }
+.section3 .div1 dl.wenzi_01 dt{ width: 100%; text-align: right; }
+.section3 .div1 dl.wenzi_02{ width: 177px; position: absolute; right: 215px; top: 113px; }
+
+/*第四屏*/
+.section4{/* background: url(../images/bgts1.png) center center no-repeat;*/}
+.section4 .div1{ width: 1200px; height: 444px; }
+.section4 .div1 .mg1{ position: absolute;/* left: 84px;*/ left: 74px; top: 0px; }
+.section4 .div1 .mg2{ position: absolute; left: 400px; top: 106px; }
+.section4 .div1 .mg3{ position: absolute; left: 366px; top: 280px; }
+.section4 .div1 .mg4{ position: absolute; right: 344px; top:96px; }
+.section4 .div1 .mg5{ position: absolute; left: 360px; top: 301px; }
+.section4 .div1 .mg6{ position: absolute; right: 334px; top: 117px; }
+.section4 .div1 dl dt{ color: #ffffff; font-size: 16px; line-height: 32px; }
+.section4 .div1 dl dd{ color: #c4c4c4; line-height: 22px; }
+.section4 .div1 dl.wenzi_01{ width: 182px; position: absolute; left: 158px; top: 320px; }
+.section4 .div1 dl.wenzi_01 dt{ width: 100%; text-align: right; }
+.section4 .div1 dl.wenzi_02{ width: 200px; position: absolute; right: 120px; top: 123px; }
+
+/*active*/
+.section1.active .mg1,.section1.active .mg2,.section2.active .mg1,.section2.active .mg2,.section3.active .mg1,.section3.active .mg2,.section4.active .mg1,.section4.active .mg2 {
+     opacity: 1;
+    -webkit-animation: fadeIn 1s ease 1s both;
+    -moz-animation: fadeIn 1s ease 1s both;
+    animation: fadeIn 1s ease 1s both;
+}
+.section1.active .mg3,.section1.active .mg4,.section2.active .mg3,.section2.active .mg4,.section3.active .mg3,.section3.active .mg4,.section4.active .mg3,.section4.active .mg4{
+    -webkit-animation: fadeIn 1.5s ease 1.0s both;
+    -moz-animation: fadeIn 1.5s ease 1.0s both;
+    animation: fadeIn 1.5s ease 1.0s both;
+}
+.section1.active .mg5,.section2.active .mg5,.section3.active .mg5,.section4.active .mg5{
+    -webkit-animation: fadeInRight 1.8s ease 1.7s both;
+    -moz-animation: fadeInRight 1.8s ease 1.7s both;
+    animation: fadeInRight 1.8s ease 1.7s both;
+}
+.section1.active .mg6,.section2.active .mg6,.section3.active .mg6,.section4.active .mg6{
+    -webkit-animation: fadeInLeft 1.8s ease 1.7s both;
+    -moz-animation: fadeInLeft 1.8s ease 1.7s both;
+    animation: fadeInLeft 1.8s ease 1.7s both;
+}
+
+.section1.active .wenzi_01,.section2.active .wenzi_01,.section3.active .wenzi_01,.section4.active .wenzi_01{
+    -webkit-animation: fadeInLeft 2s ease 1.5s both;
+    -moz-animation: fadeInLeft 2s ease 1.5s both;
+    animation: fadeInLeft 2s ease 1.5s both;
+}
+
+.section1.active .wenzi_02,.section2.active .wenzi_02,.section3.active .wenzi_02,.section4.active .wenzi_02{
+    -webkit-animation: fadeInRight 2s ease 1.5s both;
+    -moz-animation: fadeInRight 2s ease 1.5s both;
+    animation: fadeInRight 2s ease 1.5s both;
+}
+
+/*------------------乐客影院详情--------------------*/
+/*第一屏*/
+.y_section1{/*background:url(../images/bgyy3.png) center center no-repeat;*/}
+.y_section1 .mc{ position: absolute; height: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; background:url(../images/y_mc.png) repeat; z-index: 1;}
+.y_section1 .div1,.y_section1 .div2{ width: 1200px; height: 402px; position: absolute; left: 50%; margin-left: -600px; top: 50%; margin-top: -201px;}
+.y_section1 .div1 .mg1{ display: block; margin:0 auto; z-index: 2; }
+.y_section1 .div2{ z-index: 2; line-height: 22px; color: #c4c4c4; }
+.y_section1 .div2 dl dt{ color: #fff; font-size: 16px; }
+.y_section1 .div2 .dian1{ position: absolute; right: 562px; top: 62px; }
+.y_section1 .div2 .xian1{ position: absolute; right: 540px; top: 70px; }
+.y_section1 .div2 .dian2{ position: absolute; right: 548px; top: 213px; }
+.y_section1 .div2 .xian2{ position: absolute; right: 553px; top: 222px; }
+.y_section1 .div2 .dian3{ position: absolute; right: 590px; top: 279px; }
+.y_section1 .div2 .dian4{ position: absolute; left: 544px; top: 359px; }
+.y_section1 .div2 .xian3{ position: absolute; left: 384px; top: 324px; }
+.y_section1 .div2 .wenzi{ position: absolute; }
+.y_section1 .div2 .wenzi_01{ width: 344px; right: 159px; top: 56px; }
+.y_section1 .div2 .wenzi_01 dd{ width: 252px; }
+.y_section1 .div2 .wenzi_02{ width: 300px; right:197px; top: 200px; }
+.y_section1 .div2 .wenzi_02 dd{ width: 176px; }
+.y_section1 .div2 .wenzi_03{ width: 378px; right:210px; top: 314px; }
+.y_section1 .div2 .wenzi_03 dd{ width: 245px; }
+.y_section1 .div2 .wenzi_04{ width: 180px; left:202px; top: 300px; }
+.y_section1 .div2 .wenzi_04 dt{ width: 100%; text-align: right; line-height: normal; line-height: 34px;}
+.y_section1 .div2 .wenzi_04 dd{ width: 180px; }
+
+/*active*/
+.y_section1.active .div1 .mg1{
+    -webkit-animation: fadeIn 1s ease 1s both;
+    -moz-animation: fadeIn 1s ease 1s both;
+    animation: fadeIn 1s ease 1s both;
+}
+.y_section1.active .div2 .dian1{
+    -webkit-animation: fadeIn 1s ease 1.5s both;
+    -moz-animation: fadeIn 1s ease 1.5s both;
+    animation: fadeIn 1s ease 1.5s both;
+}
+.y_section1.active .div2 .wenzi_01{
+    -webkit-animation: fadeInRight 1s ease 2s both;
+    -moz-animation: fadeInRight 1s ease 2s both;
+    animation: fadeInRight 1s ease 2s both;
+}
+.y_section1.active .div2 .xian1{
+    -webkit-animation: fadeIn 1s ease 2.5s both;
+    -moz-animation: fadeIn 1s ease 2.5s both;
+    animation: fadeIn 1s ease 2.5s both;
+}
+.y_section1.active .div2 .dian2{
+    -webkit-animation: fadeIn 1s ease 3s both;
+    -moz-animation: fadeIn 1s ease 3s both;
+    animation: fadeIn 1s ease 3s both;
+}
+.y_section1.active .div2 .wenzi_02{
+    -webkit-animation: fadeInRight 1s ease 3.5s both;
+    -moz-animation: fadeInRight 1s ease 3.5s both;
+    animation: fadeInRight 1s ease 3.5s both;
+}
+.y_section1.active .div2 .xian2{
+    -webkit-animation: fadeIn 1s ease 4s both;
+    -moz-animation: fadeIn 1s ease 4s both;
+    animation: fadeIn 1s ease 4s both;
+}
+.y_section1.active .div2 .dian3{
+    -webkit-animation: fadeIn 1s ease 4.5s both;
+    -moz-animation: fadeIn 1s ease 4.5s both;
+    animation: fadeIn 1s ease 4.5s both;
+}
+.y_section1.active .div2 .wenzi_03{
+    -webkit-animation: fadeInRight 1s ease 5s both;
+    -moz-animation: fadeInRight 1s ease 5s both;
+    animation: fadeInRight 1s ease 5s both;
+}
+.y_section1.active .div2 .dian4{
+    -webkit-animation: fadeIn 1s ease 5.5s both;
+    -moz-animation: fadeIn 1s ease 5.5s both;
+    animation: fadeIn 1s ease 5.5s both;
+}
+.y_section1.active .div2 .xian3{
+    -webkit-animation: fadeIn 1s ease 6s both;
+    -moz-animation: fadeIn 1s ease 6s both;
+    animation: fadeIn 1s ease 6s both;
+}
+.y_section1.active .div2 .wenzi_04{
+    -webkit-animation: fadeInLeft 1s ease 6.5s both;
+    -moz-animation: fadeInLeft 1s ease 6.5s both;
+    animation: fadeInLeft 1s ease 6.5s both;
+}
+/*第二屏*/
+.y_section2{/*background:url(../images/bgyy3.png) center center no-repeat;*/}
+.y_section2 .div1{ width: 1200px; height: 423px; }
+.y_section2 .div1 .mg1{ position: absolute; left: 86px; top: 0px; }
+.y_section2 .div1 .wenzi{ line-height: 30px; color: #d5d5d7; width: 530px; position: absolute; left: 86px; top: 92px; font-size: 14px; }
+.y_section2 .div1 .chanpintu{ position: absolute; right: 100px; bottom:0; }
+/*active*/
+.y_section2.active .div1 .chanpintu{
+    -webkit-animation: bounceInDown 1.5s ease 0.5s both;
+    -moz-animation: bounceInDown 1.5s ease 0.5s both;
+    animation: bounceInDown 1.5s ease 0.5s both;
+}
+.y_section2.active .div1 .mg1{
+    -webkit-animation: fadeInLeft 1.5s ease 1.8s both;
+    -moz-animation: fadeInLeft 1.5s ease 1.8s both;
+    animation: fadeInLeft 1.5s ease 1.8s both;
+}
+.y_section2.active .div1 .wenzi{
+    -webkit-animation: fadeIn 1.5s ease 3.5s both;
+    -moz-animation: fadeIn 1.5s ease 3.5s both;
+    animation: fadeIn 1.5s ease 3.5s both;
+}
+
+/*------------乐客雪橇详情---------------*/
+/*第一屏*/
+.xj_section1{background:#1b1b22; }
+.xj_section1 .mc{ position: absolute; height: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; background:url(../images/y_mc2.png) repeat; z-index: 1;}
+.xj_section1 .div1,.xj_section1 .div2{ width: 1200px; height: 417px; position: absolute; left: 50%; margin-left: -600px; top: 50%; margin-top: -208px;}
+.xj_section1 .div1 .mg1{ display: block; margin:0 auto; z-index: 2; }
+.xj_section1 .div2{ z-index: 2; line-height: 22px; color: #c4c4c4; }
+.xj_section1 .div2 dl dt{ color: #fff; font-size: 16px; }
+.xj_section1 .div2 .dian1{ position: absolute; left: 536px; top: 78px; }
+.xj_section1 .div2 .xian1{ position: absolute; left: 544px; top: 41px; }
+.xj_section1 .div2 .dian2{ position: absolute; left: 633px; top: 37px; }
+.xj_section1 .div2 .xian2{ position: absolute; left: 642px; top: 39px; }
+.xj_section1 .div2 .dian3{ position: absolute; right: 459px; top: 55px; }
+.xj_section1 .div2 .dian4{ position: absolute; left: 493px; top: 277px; }
+.xj_section1 .div2 .xian3{ position: absolute; left: 368px; top: 234px; }
+.xj_section1 .div2 .wenzi{ position: absolute; color: #c4c4c4; line-height: 22px; }
+.xj_section1 .div2 .wenzi dt{ font-size: 16px; color: #fff; line-height: normal; line-height: 30px;}
+.xj_section1 .div2 .wenzi_01{ width: 170px; left: 330px; top: 36px; }
+.xj_section1 .div2 .wenzi_01 dt{ width: 100%; text-align: right; }
+.xj_section1 .div2 .wenzi_02{ width: 200px; left:640px; top: -49px; }
+.xj_section1 .div2 .wenzi_03{ width: 165px; right:262px; top: 50px; }
+.xj_section1 .div2 .wenzi_04{ width: 170px; left:208px; top: 245px; }
+.xj_section1 .div2 .wenzi_04 dt{ text-align: right;}
+
+/*active*/
+.xj_section1.active .div1 .mg1{
+    -webkit-animation: fadeIn 1s ease 1s both;
+    -moz-animation: fadeIn 1s ease 1s both;
+    animation: fadeIn 1s ease 1s both;
+}
+.xj_section1.active .div2 .dian1{
+    -webkit-animation: fadeIn 1s ease 1.5s both;
+    -moz-animation: fadeIn 1s ease 1.5s both;
+    animation: fadeIn 1s ease 1.5s both;
+}
+.xj_section1.active .div2 .wenzi_01{
+    -webkit-animation: fadeInLeft 1s ease 2s both;
+    -moz-animation: fadeInLeft 1s ease 2s both;
+    animation: fadeInLeft 1s ease 2s both;
+}
+.xj_section1.active .div2 .xian1{
+    -webkit-animation: fadeIn 1s ease 2.5s both;
+    -moz-animation: fadeIn 1s ease 2.5s both;
+    animation: fadeIn 1s ease 2.5s both;
+}
+.xj_section1.active .div2 .dian2{
+    -webkit-animation: fadeIn 1s ease 3s both;
+    -moz-animation: fadeIn 1s ease 3s both;
+    animation: fadeIn 1s ease 3s both;
+}
+.xj_section1.active .div2 .wenzi_02{
+    -webkit-animation: fadeInRight 1s ease 3.5s both;
+    -moz-animation: fadeInRight 1s ease 3.5s both;
+    animation: fadeInRight 1s ease 3.5s both;
+}
+.xj_section1.active .div2 .xian2{
+    -webkit-animation: fadeIn 1s ease 4s both;
+    -moz-animation: fadeIn 1s ease 4s both;
+    animation: fadeIn 1s ease 4s both;
+}
+.xj_section1.active .div2 .dian3{
+    -webkit-animation: fadeIn 1s ease 4.5s both;
+    -moz-animation: fadeIn 1s ease 4.5s both;
+    animation: fadeIn 1s ease 4.5s both;
+}
+.xj_section1.active .div2 .wenzi_03{
+    -webkit-animation: fadeInRight 1s ease 5s both;
+    -moz-animation: fadeInRight 1s ease 5s both;
+    animation: fadeInRight 1s ease 5s both;
+}
+.xj_section1.active .div2 .dian4{
+    -webkit-animation: fadeIn 1s ease 5.5s both;
+    -moz-animation: fadeIn 1s ease 5.5s both;
+    animation: fadeIn 1s ease 5.5s both;
+}
+.xj_section1.active .div2 .xian3{
+    -webkit-animation: fadeIn 1s ease 6s both;
+    -moz-animation: fadeIn 1s ease 6s both;
+    animation: fadeIn 1s ease 6s both;
+}
+.xj_section1.active .div2 .wenzi_04{
+    -webkit-animation: fadeInLeft 1s ease 6.5s both;
+    -moz-animation: fadeInLeft 1s ease 6.5s both;
+    animation: fadeInLeft 1s ease 6.5s both;
+}
+
+/*第二屏*/
+.xj_section2{/*background:url(../images/bgxj3.png) center center no-repeat;*/}
+.xj_section2 .div1{ width: 1200px; height: 430px; }
+.xj_section2 .div1 .mg1{ position: absolute; left: 86px; top: 0px; }
+.xj_section2 .div1 .wenzi2{ line-height: 30px; color: #8d8d90; width: 570px; position: absolute; left: 86px; top: 92px; }
+.xj_section2 .div1 .chanpintu{ position: absolute; right: 126px; bottom:0; }
+/*active*/
+.xj_section2.active .div1 .chanpintu{
+    -webkit-animation: bounceInDown 1.5s ease 0.5s both;
+    -moz-animation: bounceInDown 1.5s ease 0.5s both;
+    animation: bounceInDown 1.5s ease 0.5s both;
+}
+.xj_section2.active .div1 .mg1{
+    -webkit-animation: fadeInLeft 1.5s ease 1.8s both;
+    -moz-animation: fadeInLeft 1.5s ease 1.8s both;
+    animation: fadeInLeft 1.5s ease 1.8s both;
+}
+.xj_section2.active .div1 .wenzi2{
+    -webkit-animation: fadeIn 1.5s ease 3.5s both;
+    -moz-animation: fadeIn 1.5s ease 3.5s both;
+    animation: fadeIn 1.5s ease 3.5s both;
+}
+
+
+/*-----------------------单车详情-----------------------------*/
+/*第一屏*/
+.dc_section1{background:#1b1b22; }
+.dc_section1 .mc{ position: absolute; height: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; background:url(../images/y_mc2.png) repeat; z-index: 1;}
+.dc_section1 .div1,.dc_section1 .div2{ width: 1200px; height: 466px; position: absolute; left: 50%; margin-left: -600px; top: 50%; margin-top: -233px;}
+.dc_section1 .div1 .mg1{ display: block; position: absolute; left: 517px; top: 0px; z-index: 0; }
+.dc_section1 .div2{ z-index: 2; line-height: 22px; color: #c4c4c4; }
+.dc_section1 .div2 dl dt{ color: #fff; font-size: 16px; }
+.dc_section1 .div2 .dian1{ position: absolute; left: 653px; top: 90px; }
+.dc_section1 .div2 .xian1{ position: absolute; left: 662px; top: 98px; }
+.dc_section1 .div2 .dian2{ position: absolute; left: 688px; top: 215px; }
+.dc_section1 .div2 .xian2{ position: absolute; left: 642px; top: 226px; }
+.dc_section1 .div2 .dian3{ position: absolute; left: 635px; top: 291px; }
+.dc_section1 .div2 .dian4{ position: absolute; left: 566px; top: 335px; }
+.dc_section1 .div2 .xian3{ position: absolute; left: 372px; top: 297px; }
+.dc_section1 .div2 .wenzi{ position: absolute; color: #c4c4c4; line-height: 22px; }
+.dc_section1 .div2 .wenzi dt{ font-size: 16px; color: #fff; line-height: normal; line-height: 30px;}
+.dc_section1 .div2 .wenzi_01{ width: 180px; left: 473px; top: 52px; }
+.dc_section1 .div2 .wenzi_01 dt{text-align: right; padding-right: 10px; }
+.dc_section1 .div2 .wenzi_02{ width: 225px; right:247px; top: 188px; }
+.dc_section1 .div2 .wenzi_02 dt{ width: 68px; }
+.dc_section1 .div2 .wenzi_02 dd{ width:150px;}
+.dc_section1 .div2 .wenzi_03{ width: 212px; left:400px; top: 231px; }
+.dc_section1 .div2 .wenzi_03 dd{ width: 150px;}
+.dc_section1 .div2 .wenzi_04{ width: 146px; left:220px; top: 343px; }
+.dc_section1 .div2 .wenzi_04 dt{ text-align: right;}
+
+/*active*/
+.dc_section1.active .div1 .mg1{
+    -webkit-animation: fadeIn 1s ease 1s both;
+    -moz-animation: fadeIn 1s ease 1s both;
+    animation: fadeIn 1s ease 1s both;
+}
+.dc_section1.active .div2 .dian1{
+    -webkit-animation: fadeIn 1s ease 1.5s both;
+    -moz-animation: fadeIn 1s ease 1.5s both;
+    animation: fadeIn 1s ease 1.5s both;
+}
+.dc_section1.active .div2 .wenzi_01{
+    -webkit-animation: fadeInLeft 1s ease 2s both;
+    -moz-animation: fadeInLeft 1s ease 2s both;
+    animation: fadeInLeft 1s ease 2s both;
+}
+.dc_section1.active .div2 .xian1{
+    -webkit-animation: fadeIn 1s ease 2.5s both;
+    -moz-animation: fadeIn 1s ease 2.5s both;
+    animation: fadeIn 1s ease 2.5s both;
+}
+.dc_section1.active .div2 .dian2{
+    -webkit-animation: fadeIn 1s ease 3s both;
+    -moz-animation: fadeIn 1s ease 3s both;
+    animation: fadeIn 1s ease 3s both;
+}
+.dc_section1.active .div2 .wenzi_02{
+    -webkit-animation: fadeInRight 1s ease 3.5s both;
+    -moz-animation: fadeInRight 1s ease 3.5s both;
+    animation: fadeInRight 1s ease 3.5s both;
+}
+.dc_section1.active .div2 .xian2{
+    -webkit-animation: fadeIn 1s ease 4s both;
+    -moz-animation: fadeIn 1s ease 4s both;
+    animation: fadeIn 1s ease 4s both;
+}
+.dc_section1.active .div2 .dian3{
+    -webkit-animation: fadeIn 1s ease 4.5s both;
+    -moz-animation: fadeIn 1s ease 4.5s both;
+    animation: fadeIn 1s ease 4.5s both;
+}
+.dc_section1.active .div2 .wenzi_03{
+    -webkit-animation: fadeInLeft 1s ease 5s both;
+    -moz-animation: fadeInLeft 1s ease 5s both;
+    animation: fadeInLeft 1s ease 5s both;
+}
+.dc_section1.active .div2 .dian4{
+    -webkit-animation: fadeIn 1s ease 5.5s both;
+    -moz-animation: fadeIn 1s ease 5.5s both;
+    animation: fadeIn 1s ease 5.5s both;
+}
+.dc_section1.active .div2 .xian3{
+    -webkit-animation: fadeIn 1s ease 6s both;
+    -moz-animation: fadeIn 1s ease 6s both;
+    animation: fadeIn 1s ease 6s both;
+}
+.dc_section1.active .div2 .wenzi_04{
+    -webkit-animation: fadeInLeft 1s ease 6.5s both;
+    -moz-animation: fadeInLeft 1s ease 6.5s both;
+    animation: fadeInLeft 1s ease 6.5s both;
+}
+
+/*第二屏*/
+.dc_section2{/*background:url(../images/bgdc3.png) center center no-repeat;*/}
+.dc_section2 .div1{ width: 1200px; height: 436px; }
+.dc_section2 .div1 .mg1{ position: absolute; left: 86px; top: 0px; }
+.dc_section2 .div1 .wenzi2{ line-height: 30px; color: #8d8d90; width: 587px; position: absolute; left: 86px; top: 100px; }
+.dc_section2 .div1 .chanpintu{ position: absolute; right: 165px; bottom:0; }
+/*active*/
+.dc_section2.active .div1 .chanpintu{
+    -webkit-animation: bounceInDown 1.5s ease 0.5s both;
+    -moz-animation: bounceInDown 1.5s ease 0.5s both;
+    animation: bounceInDown 1.5s ease 0.5s both;
+}
+.dc_section2.active .div1 .mg1{
+    -webkit-animation: fadeInLeft 1.5s ease 1.8s both;
+    -moz-animation: fadeInLeft 1.5s ease 1.8s both;
+    animation: fadeInLeft 1.5s ease 1.8s both;
+}
+.dc_section2.active .div1 .wenzi2{
+    -webkit-animation: fadeIn 1.5s ease 3.5s both;
+    -moz-animation: fadeIn 1.5s ease 3.5s both;
+    animation: fadeIn 1.5s ease 3.5s both;
+}
+
+
+/*------------------探索详情--------------------*/
+/*第一屏*/
+.ts_section1{background:#1b1b22; }
+.ts_section1 .mc{ position: absolute; height: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; background:url(../images/y_mc2.png) repeat; z-index: 1;}
+.ts_section1 .div1,.ts_section1 .div2{ width: 1200px; height: 482px; position: absolute; left: 50%; margin-left: -600px; top: 50%; margin-top: -241px;}
+.ts_section1 .div1 .mg1{ display: block; position: absolute; left: 515px; top: 0px; z-index: 0; }
+.ts_section1 .div2{ z-index: 2; line-height: 22px; color: #c4c4c4; }
+.ts_section1 .div2 dl dt{ color: #fff; font-size: 16px; }
+.ts_section1 .div2 .dian1{ position: absolute; left: 516px; top: 157px; }
+.ts_section1 .div2 .xian1{ position: absolute; left: 525px; top: 151px; }
+.ts_section1 .div2 .dian2{ position: absolute; right: 535px; top: 205px; }
+.ts_section1 .div2 .xian2{ position: absolute; right: 516px; top: 214px; }
+.ts_section1 .div2 .dian3{ position: absolute; right: 513px; top: 310px; }
+.ts_section1 .div2 .dian4{ position: absolute; left: 553px; top: 239px; }
+.ts_section1 .div2 .xian3{ position: absolute; left: 480px; top: 232px; }
+.ts_section1 .div2 .dian5{ position: absolute; left: 572px; top: 343px; }
+.ts_section1 .div2 .xian4{ position: absolute; left: 420px; top: 317px; }
+.ts_section1 .div2 .wenzi{ position: absolute; color: #c4c4c4; line-height: 22px; }
+.ts_section1 .div2 .wenzi dt{ font-size: 16px; color: #fff; line-height: normal; line-height: 30px;}
+.ts_section1 .div2 .wenzi_01{ width: 307px; left: 181px; top: 124px; }
+.ts_section1 .div2 .wenzi_01 dd{ width:190px;}
+.ts_section1 .div2 .wenzi_02{ width: 340px; right:170px; top: 190px; }
+.ts_section1 .div2 .wenzi_02 dd{ width:215px;}
+.ts_section1 .div2 .wenzi_03{ width: 297px; right:172px; top: 300px; }
+.ts_section1 .div2 .wenzi_03 dd{ width: 202px;}
+.ts_section1 .div2 .wenzi_04{ width: 296px; left:152px; top: 238px; }
+.ts_section1 .div2 .wenzi_04 dd{ width: 190px;}
+.ts_section1 .div2 .wenzi_05{ width: 204px; left:205px; top: 348px; }
+.ts_section1 .div2 .wenzi_05 dt{ width: 100%; text-align: right;}
+.ts_section1 .div2 .wenzi_05 dd{ }
+
+/*active*/
+.ts_section1.active .div1 .mg1{
+    -webkit-animation: fadeIn 1s ease 1s both;
+    -moz-animation: fadeIn 1s ease 1s both;
+    animation: fadeIn 1s ease 1s both;
+}
+.ts_section1.active .div2 .dian1{
+    -webkit-animation: fadeIn 1s ease 1.5s both;
+    -moz-animation: fadeIn 1s ease 1.5s both;
+    animation: fadeIn 1s ease 1.5s both;
+}
+.ts_section1.active .div2 .wenzi_01{
+    -webkit-animation: fadeInLeft 1s ease 2s both;
+    -moz-animation: fadeInLeft 1s ease 2s both;
+    animation: fadeInLeft 1s ease 2s both;
+}
+.ts_section1.active .div2 .xian1{
+    -webkit-animation: fadeIn 1s ease 2.5s both;
+    -moz-animation: fadeIn 1s ease 2.5s both;
+    animation: fadeIn 1s ease 2.5s both;
+}
+.ts_section1.active .div2 .dian2{
+    -webkit-animation: fadeIn 1s ease 3s both;
+    -moz-animation: fadeIn 1s ease 3s both;
+    animation: fadeIn 1s ease 3s both;
+}
+.ts_section1.active .div2 .wenzi_02{
+    -webkit-animation: fadeInRight 1s ease 3.5s both;
+    -moz-animation: fadeInRight 1s ease 3.5s both;
+    animation: fadeInRight 1s ease 3.5s both;
+}
+.ts_section1.active .div2 .xian2{
+    -webkit-animation: fadeIn 1s ease 4s both;
+    -moz-animation: fadeIn 1s ease 4s both;
+    animation: fadeIn 1s ease 4s both;
+}
+.ts_section1.active .div2 .dian3{
+    -webkit-animation: fadeIn 1s ease 4.5s both;
+    -moz-animation: fadeIn 1s ease 4.5s both;
+    animation: fadeIn 1s ease 4.5s both;
+}
+.ts_section1.active .div2 .wenzi_03{
+    -webkit-animation: fadeInRight 1s ease 5s both;
+    -moz-animation: fadeInRight 1s ease 5s both;
+    animation: fadeInRight 1s ease 5s both;
+}
+.ts_section1.active .div2 .dian4{
+    -webkit-animation: fadeIn 1s ease 5.5s both;
+    -moz-animation: fadeIn 1s ease 5.5s both;
+    animation: fadeIn 1s ease 5.5s both;
+}
+.ts_section1.active .div2 .xian3{
+    -webkit-animation: fadeIn 1s ease 6s both;
+    -moz-animation: fadeIn 1s ease 6s both;
+    animation: fadeIn 1s ease 6s both;
+}
+.ts_section1.active .div2 .wenzi_04{
+    -webkit-animation: fadeInLeft 1s ease 6.5s both;
+    -moz-animation: fadeInLeft 1s ease 6.5s both;
+    animation: fadeInLeft 1s ease 6.5s both;
+}
+.ts_section1.active .div2 .dian5{
+    -webkit-animation: fadeIn 1s ease 7.5s both;
+    -moz-animation: fadeIn 1s ease 7.5s both;
+    animation: fadeIn 1s ease 7.5s both;
+}
+.ts_section1.active .div2 .xian4{
+    -webkit-animation: fadeIn 1s ease 8s both;
+    -moz-animation: fadeIn 1s ease 8s both;
+    animation: fadeIn 1s ease 8s both;
+}
+.ts_section1.active .div2 .wenzi_05{
+    -webkit-animation: fadeInLeft 1s ease 8.5s both;
+    -moz-animation: fadeInLeft 1s ease 8.5s both;
+    animation: fadeInLeft 1s ease 8.5s both;
+}
+
+/*第二屏*/
+.ts_section2{/*background:url(../images/bgxj3.png) center center no-repeat;*/}
+.ts_section2 .div1{ width: 1200px; height: 443px; }
+.ts_section2 .div1 .mg1{ position: absolute; left: 86px; top: 45px; }
+.ts_section2 .div1 .wenzi2{ line-height: 30px; color: #8d8d90; width: 576px; position: absolute; left: 86px; top: 138px; }
+.ts_section2 .div1 .chanpintu{ position: absolute; right: 88px; bottom:0; }
+/*active*/
+.ts_section2.active .div1 .chanpintu{
+    -webkit-animation: bounceInDown 1.5s ease 0.5s both;
+    -moz-animation: bounceInDown 1.5s ease 0.5s both;
+    animation: bounceInDown 1.5s ease 0.5s both;
+}
+.ts_section2.active .div1 .mg1{
+    -webkit-animation: fadeInLeft 1.5s ease 1.8s both;
+    -moz-animation: fadeInLeft 1.5s ease 1.8s both;
+    animation: fadeInLeft 1.5s ease 1.8s both;
+}
+.ts_section2.active .div1 .wenzi2{
+    -webkit-animation: fadeIn 1.5s ease 3.5s both;
+    -moz-animation: fadeIn 1.5s ease 3.5s both;
+    animation: fadeIn 1.5s ease 3.5s both;
+}
+
+
+
+/* 关于我们 */
+.gywm_main{ padding-top: 95px;/* background: #1b1b22 url(../images/bg1.png) no-repeat center top;*/ }
+.gywm_main .fp-tableCell{ vertical-align:top; }
+.gywm_main_nr{ width: 1200px; }
+.gywm_main_nrk{ font-size: 14px; color: #c1c1c1; width: 675px; line-height: 30px; margin-left:175px; }
+.gywm_main_nrk span.bt{ font-size: 20px; color: #fff; margin-bottom: 30px; display: block;}
+
+/* 寻求合作-游戏代理 */
+.yxdl_main{/* padding-top: 95px;*/}
+/*.yxdl_main .fp-tableCell{ vertical-align:top; }*/
+.yxdl_main_nr{ width: 1200px; }
+.yxdl_main_nrk{ width: 1025px; margin-left:175px; }
+.yxdl_main_nrk h2{ font-size:20px; color: #fff; width: 1025px; line-height:100%; }
+.yxdl_main_nrk1{ font-size:14px; color: #c1c1c1; width: 565px; line-height: 30px; margin-top: 20px; padding: 10px 460px 40px 0; border-top: 1px dashed #878788; }
+
+/* 寻求合作-品牌合作 */
+.pphz_main{ padding-top: 105px;}
+.pphz_main .fp-tableCell{ vertical-align:top; }
+.pphz_main1{ width: 1200px; }
+.pphz_main1_nr{ width: 1025px; margin-left:175px; }
+.pphz_main1_nr h2{ font-size:20px; color: #fff; width: 1025px; }
+.pphz_main1_nrk{ font-size:14px; color: #c1c1c1; width: 585px; height: 250px; line-height: 30px; margin-top: 20px; padding: 10px 440px 10px 0; border-top: 1px dashed #878788; border-bottom: 1px dashed #878788; }
+.pphz_main2{ width: 100%; height: 222px; margin-top:20px; padding: 16px 0 16px; position: absolute; bottom:100px; /* background: url(../images/bg2.png) repeat-y center; */}
+.pphz_main2>img.pphz_mg1{ position: absolute; left: 50%; margin-left: -2500px; top: 50%; margin-top: -225px; }
+.pphz_main2_nr{ width: 1200px; }
+.pphz_main2_nrk{ width: 1025px; margin-left:175px; }
+.pphz_main2_nrk ul{ width: 1025px; margin-top: 10px;}
+.pphz_main2_nrk ul li{ width: 196px;}
+.pphz_main2_nrk ul li p{ width: 54px; height: 50px; padding: 15px 13px; background: url(../images/bg3.png) no-repeat;}
+.pphz_main2_nrk ul li p img{ width: 54px; height: 50px;}
+.pphz_main2_nrk ul li p .img1{ display:block; }
+.pphz_main2_nrk ul li p .img2{ display:none; }
+.pphz_main2_nrk ul li:hover p{ background: url(../images/bg3_h.png) no-repeat;}
+.pphz_main2_nrk ul li:hover p .img1{ display:none; }
+.pphz_main2_nrk ul li:hover p .img2{ display:block; }
+.pphz_main2_nrk ul li span a{ font-size:12px; color: #9696a4; width: 196px; line-height:100%; text-align:center; margin-top:10px; display:block;}
+
+/* 寻求合作-推荐游戏 */
+.tjyx_main{/* padding-top: 95px;*//* background: #1b1b22 url(../images/pic2.jpg) no-repeat center top;*/}
+/*.tjyx_main .fp-tableCell{ vertical-align:top; }*/
+.tjyx_main_nr{ width: 1200px; }
+.tjyx_main_nrk{ width: 1025px; margin-left:175px; }
+.tjyx_main_nrk h2{ font-size:20px; color: #fff; width: 1025px; padding-bottom:20px; border-bottom: 1px dashed #878788; }
+.tjyx_main_nrk1{ width:660px; margin-top:20px; padding: 0 30px 10px; background-color:#23232c; border-radius:10px; }
+.tjyx_main_nrk1 h3{ font-size:14px; color:#c1c1c1; width:660px; height: 34px; line-height:34px; text-align:center;}
+.tjyx_main_nrk1 ul{ width:660px;}
+.tjyx_main_nrk1 ul li{ width:660px; margin-top:25px;}
+.tjyx_main_nrk1 ul li:first-child{ margin-top:0px; }
+.tjyx_main_nrk1 ul li .wbk1{ font-size:14px; color:#c1c1c1; width:640px; height:36px; line-height:36px; padding:0 10px; background-color:#18181f; border:0px; border-radius:5px;}
+.tjyx_main_nrk1 ul li .wbk2{ font-size:14px; color:#c1c1c1; width:640px; height:70px; line-height:30px; padding:0 10px; background-color:#18181f; border:0px; border-radius:5px;}
+.tjyx_main_nrk2{ width:720px; margin-top:10px; }
+.tjyx_main_nrk2 p{ font-size:12px; color:#c1c1c1; width:720px;}
+.tjyx_main_nrk2 span{ width:720px; margin-top:20px; display:block;}
+.tjyx_main_nrk2 span .btn{ font-size:14px; color:#000; width:110px; height:35px; line-height:100%; text-align:center; background-color:#e68100; border:0px; border-radius:5px; }
+/* 资讯 */
+.zx_main{/* padding-top: 65px;*/ background-color: #1b1b22;}
+/*.zx_main .fp-tableCell{ vertical-align:top; }*/
+.zx_main_nr{ width: 1010px; height: 500px;  position:absolute; left: 50%; margin-left: -505px; top: 50%; margin-top: -250px;}
+/*.zx_main_nr.active{
+    -webkit-animation: fadeIn 1.5s ease 1s both;
+    -moz-animation: fadeIn 1.5s ease 1s both;
+    animation: fadeIn 1.5s ease 1s both;
+}*/
+
+
+.zx_main_nrk{ width: 1010px; height:500px; }
+.zx_main_nrk1{ width: 500px; height: 500px; position: relative; }
+.zx_main_nrk1 p{ width: 500px; height: 500px; }
+.zx_main_nrk1 p img{ width: 500px; height: 500px; }
+.zx_main_nrk1 span a{ font-size: 12px; color: #c4c4c4; width: 450px; height: 75px; line-height: 20px; padding: 30px 25px 0; background: url(../images/bg8.png) repeat-x; position: absolute; left: 0px; bottom: 0px; display: none;}
+
+.zx_main_nrk2{ width: 510px; height: 500px; margin-top: -10px; }
+.zx_main_nrk2_nr{ width: 245px; height: 245px; margin: 10px 0 0 10px; position: relative; }
+.zx_main_nrk2_nr p{ width: 245px; height: 245px; }
+.zx_main_nrk2_nr p img{ width: 245px; height: 245px; }
+.zx_main_nrk2 span a{ font-size: 12px; color: #c4c4c4; width: 195px; height: 75px; line-height: 20px; padding: 30px 25px 0; background: url(../images/bg8.png) repeat-x; position: absolute; left: 0px; bottom: 0px; display: none;}
+
+.zx_main_nrk3{ width: 245px; height: 500px; margin-top: -10px; }
+.zx_main_nrk3_nr{ width: 245px; height: 245px; margin-top: 10px; position: relative; }
+.zx_main_nrk3_nr p{ width: 245px; height: 245px; }
+.zx_main_nrk3_nr p img{ width: 245px; height: 245px; }
+.zx_main_nrk3_nr span a{ font-size: 12px; color: #c4c4c4; width: 195px; height: 75px; line-height: 20px; padding: 30px 25px 0; background: url(../images/bg8.png) repeat-x; position: absolute; left: 0px; bottom: 0px; display: none;}
+.zx_main_nrk3_nr span a{ font-size: 12px; color: #c4c4c4; width: 195px; height: 75px; line-height: 20px; padding: 30px 25px 0; background: url(../images/bg8.png) repeat-x; position: absolute; left: 0px; bottom: 0px; display: none;}
+
+.zx_main_nrk1 span a em,.zx_main_nrk2_nr span a em,.zx_main_nrk3_nr span a em{ font-size: 16px; font-style: normal; color: #fff; margin-bottom: 10px; display: block;}
+.zx_main_nrk1:hover span a,.zx_main_nrk2_nr:hover span a,.zx_main_nrk3_nr:hover span a{ display: block; }
+
+
+/* 资讯弹窗 */
+.zx1{ position:fixed; top:0px; left:0px; width:100%; height:100%; z-index:20000; display: none; background:url(../images/bg9.png) repeat;}
+.tcdiv1{ color:#fff; width:1094px; height: 595px; margin-left:-600px; padding: 53px 53px 30px; position:absolute; top:0px; left:50%; z-index: -99999;}
+.tcdiv1 #container{ width:1094px; height:595px;}
+.tcdiv1 .scroll-pane{ width:1124px; height:555px; padding: 20px 0px; overflow: auto;}
+.tcdiv1 .tcdiv1_nr{ font-size: 14px; color: #c4c4c4; width:1094px; line-height: 27px;}
+.tcdiv1 .tcdiv1_nr span.bt{ font-size: 18px; color: #fff; margin: 25px 0 8px; display: block;}
+.tcdiv1 .gb{ position: absolute; top: 15px; right: 20px; }
+
+
+@media screen and (min-width:1919px) and (max-width:1939px){
+    .chakanxq,.mgbg,.header,.gywm_main_nr,.hai,.pphz_mg1{transform:scale(1.4);}
+    .div1,.div2,.zx_main_nr{transform:scale(1.2);}
+    /* .gywm_main{background: #1b1b22 url(../images/bg12.jpg) no-repeat center top; }*/
+    .zx_main_nrk1 span a,.zx_main_nrk3 span a,.zx_main_nrk2_nr span a{ height: 75px; }
+    .zx_main_nrk1 span a em,.zx_main_nrk2_nr span a em,.zx_main_nrk3_nr span a em{ font-size: 14px; }
+    /*.pphz_main{transform:scale(0.9);}*/
+    .pphz_main .pphz_main1,.pphz_main .pphz_main2_nr{transform:scale(0.9);}
+    /*.gywm_main_nr,.hai{ padding-top: 130px; }*/
+    .gywm_main{ padding-top:150px; }
+    .pphz_main .hai{ padding-top:125px; }
+    .hai{ margin-left: 248px; }
+    /*.pphz_main2{ margin-top: 250px; }*/
+    .pphz_main2_nrk ul{ margin-top: -105px; }
+    .pphz_main2{ position: absolute; bottom:150px;}
+}
+
+@media screen and (min-width: 1940px){
+    .div1,.div2,.chakanxq,.zx_main_nr,.mgbg,.header,.footer,.gywm_main_nr,.hai,.pphz_mg1{transform:scale(1.8);}
+    /* .gywm_main{background: #1b1b22 url(../images/bg12.jpg) no-repeat center top; }*/
+    .zx_main_nrk1 span a,.zx_main_nrk3 span a,.zx_main_nrk2_nr span a{ height: 75px; }
+    .zx_main_nrk1 span a em,.zx_main_nrk2_nr span a em,.zx_main_nrk3_nr span a em{ font-size: 14px; }
+    .gywm_main_nr,.hai{ padding-top: 130px; }
+    .hai{ margin-left: 248px; }
+    .pphz_main2{ margin-top: 250px; }
+    .pphz_main2_nrk ul{ margin-top: -105px; }
+}
