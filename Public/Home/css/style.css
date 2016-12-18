@@ -144,7 +144,7 @@ z-index: -2;
     animation: fadeInRight 2s ease 1.5s both;
 }
 
-/*------------------乐客影院详情--------------------*/
+/*------------------梦境VR影院详情--------------------*/
 /*第一屏*/
 .y_section1{/*background:url(../images/bgyy3.png) center center no-repeat;*/}
 .y_section1 .mc{ position: absolute; height: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; background:url(../images/y_mc.png) repeat; z-index: 1;}
@@ -254,7 +254,7 @@ z-index: -2;
     animation: fadeIn 1.5s ease 3.5s both;
 }
 
-/*------------乐客雪橇详情---------------*/
+/*------------梦境VR雪橇详情---------------*/
 /*第一屏*/
 .xj_section1{background:#1b1b22; }
 .xj_section1 .mc{ position: absolute; height: 100%; left: 0px; top: 0px; right: 0px; bottom: 0px; background:url(../images/y_mc2.png) repeat; z-index: 1;}
