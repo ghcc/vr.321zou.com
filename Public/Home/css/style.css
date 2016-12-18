@@ -26,9 +26,9 @@ header{ position: fixed; top: 0px; padding-top: 12px; left: 0px; z-index: 999; w
 .header nav a:first-child{ margin-left: 53px;}
 .header nav a:hover,.header nav a.xz{ border-bottom: 3px solid #e68100;}
 .header img{ display: block; margin:1px auto 0px; position: relative; z-index: -1; }
-.header a.rukou{ position: absolute; right: 40px; top: 12px; color: #fff; padding:5px; border: 1px solid #fff; }
+.header a.{ position: absolute; right: 40px; top: 12px; color: #fff; padding:5px; border: 1px solid #fff; }
 /*footer*/
-.footer{ position: fixed; left: 50%; margin-left: -600px; width: 1200px; bottom:0px; z-index: 999; line-height: 50px; color: #fff;}
+.footer{ position: fixed; left: 50%; margin-left: -600px; width: 1200px; bottom:0px; z-index: 999; line-height: 50px; color: #fff; text-align: center;}
 
 .section{ padding-bottom: 20px; overflow: hidden; }
 .mgbg-wrap {
