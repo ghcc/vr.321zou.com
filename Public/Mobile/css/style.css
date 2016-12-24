@@ -1,0 +1,359 @@
+@charset "utf-8";
+/* CSS Document */
+
+.container { /*根据效果图主体宽度定义*/
+    width: 640px; min-width: 640px; }
+
+html, body {  position: relative; height: 100%; }
+.yimg img{ display: block; }
+
+.header{ position: fixed; width: 640px; height: 60px; left: 50%; margin-left: -320px; background:url(../images/y_xian.png) center bottom no-repeat; z-index: 999;}
+.header a.logo{ margin:20px 22px 15px 20px; }
+.header nav{ margin-top: 5px; }
+.header nav ul li{ float: left; padding:0px 26px; margin-left: 24px; }
+.header nav ul li:first-child{ margin-left: 0px;}
+.header nav ul li a{ color: #fff; display: block; height: 53px; line-height: 53px; font-size: 18px;}
+.header nav ul li:hover,.header nav ul li.xz{border-bottom: 3px solid #f08400;}
+
+.swiper1 .slide_bg,.swiper2 .slide_bg,.swiper3 .slide_bg,.swiper4 .slide_bg{ background: url(../images/y_dbg_01.jpg) bottom right no-repeat #0f0f13; }
+
+#menu{ position:fixed; top: 50%; width: 8px; left:20px; z-index: 999; }
+#menu li{ width: 8px; height: 8px; margin-top:15px; }
+#menu li a{ display: block; width: 8px; height: 8px; background: url(../images/dian1.png) center top no-repeat;}
+#menu li:first-child{ margin-top: 0px; }
+#menu li.active a{ background: url(../images/dian2.png) center top no-repeat;}
+
+/*index*/
+/*one*/
+.swiper1 .slide_01 .div1{ width: 640px; height:81%; margin:0 auto;}
+.swiper1 .slide_01 .div1 a.y_zi{ position: absolute; right:7.3%; top:2%;  height: 5.944%;}
+.swiper1 .slide_01 .div1 .mg1{ position: absolute; right: 0px; bottom:-2%; height: 83.225%;}
+.swiper1 .slide_01 .div1 .y_xian{ position: absolute; right: 33%; top:45%; width: 38%;}
+.swiper1 .slide_01 .div1 .y_yuan{ position: absolute; right:69%; top: 60%; width: 3.281%;}
+.swiper1 .slide_01 .div1 a.y_wenzi{ display: block; position: absolute; top:64%; right: 48%; width: 236px; color: #fff; }
+.swiper1 .slide_01 .div1 a.y_wenzi dt{ font-size: 26px; line-height: 26px; margin-bottom: 13px;}
+.swiper1 .slide_01 .div1 a.y_wenzi dd{ font-size: 16px; line-height: 30px; color: #c4c4c4;}
+.swiper1 .slide_01 .div1 a.y_wenzi dd bdo{ display: block; color: #fff; width: 120px; height: 20px; line-height: normal; line-height: 18px; margin-top: 30px; letter-spacing: 5px; background: #f08400; text-align: center; }
+.swiper1 .slide_01 .div1 a.y_wenzi dd bdo img{ display: inline-block; position: relative; margin:0px 0px 0px 7px; top: 2px;}
+
+/*two*/
+.swiper1 .slide_02 .div1{ width: 640px; height:77%; margin:0 auto;}
+.swiper1 .slide_02 .div1 a.y_zi{ position: absolute; right:7.3%; top:2%;  height: 5.944%;}
+.swiper1 .slide_02 .div1 .mg1{ position: absolute; right: 0px; bottom:-2%; height: 84.022%;}
+.swiper1 .slide_02 .div1 .y_xian{ position: absolute; right: 38%; top:53%; width: 31.378%;}
+.swiper1 .slide_02 .div1 .y_yuan{ position: absolute; right:69%; top: 53%; width: 3.281%;}
+.swiper1 .slide_02 .div1 a.y_wenzi{ position: absolute; top:53%; right: 52%; width: 240px; color: #fff; }
+.swiper1 .slide_02 .div1 a.y_wenzi dt{ font-size: 26px; line-height: 26px; margin-bottom: 13px;}
+.swiper1 .slide_02 .div1 a.y_wenzi dd{ font-size: 16px; line-height: 30px; color: #c4c4c4;}
+.swiper1 .slide_02 .div1 a.y_wenzi dd bdo{ display: block; color: #fff; width: 120px; height: 20px; line-height: normal; line-height: 18px; margin-top: 30px; letter-spacing: 5px; background: #f08400; text-align: center; }
+.swiper1 .slide_02 .div1 a.y_wenzi dd bdo img{ display: inline-block; position: relative; margin:0px 0px 0px 7px; top: 2px;}
+
+/*three*/
+.swiper1 .slide_03 .div1{ width: 640px; height:81.42%; margin:0 auto;}
+.swiper1 .slide_03 .div1 a.y_zi{ position: absolute; right:7.3%; top:2%;  height: 5.944%;}
+.swiper1 .slide_03 .div1 .mg1{ position: absolute; right: 0px; bottom:-2%; height: 86.48%;}
+.swiper1 .slide_03 .div1 .y_xian{ position: absolute; right: 19%; top:20%; width: 33.75%;}
+.swiper1 .slide_03 .div1 .y_yuan{ position: absolute; right:51%; top: 20%; width: 3.281%;}
+.swiper1 .slide_03 .div1 a.y_wenzi{ position: absolute; top: 20%; right: 42%; width: 234px; color: #fff; }
+.swiper1 .slide_03 .div1 a.y_wenzi dt{ font-size: 26px; line-height: 26px; margin-bottom: 13px;}
+.swiper1 .slide_03 .div1 a.y_wenzi dd{ font-size: 16px; line-height: 30px; color: #c4c4c4;}
+.swiper1 .slide_03 .div1 a.y_wenzi dd bdo{ display: block; color: #fff; width: 120px; height: 20px; line-height: normal; line-height: 18px; margin-top: 30px; letter-spacing: 5px; background: #f08400; text-align: center; }
+.swiper1 .slide_03 .div1 a.y_wenzi dd bdo img{ display: inline-block; position: relative; margin:0px 0px 0px 7px; top: 2px; }
+
+/*four*/
+.swiper1 .slide_04 .div1{ width: 640px; height:80.457%; margin:0 auto;}
+.swiper1 .slide_04 .div1 a.y_zi{ position: absolute; right:7.3%; top:2%;  height: 5.944%;}
+.swiper1 .slide_04 .div1 .mg1{ position: absolute; right: 0px; bottom:-2%; height: 88.949%;}
+.swiper1 .slide_04 .div1 .y_xian{ position: absolute; right: 19%; top:33%; width: 48.435%;}
+.swiper1 .slide_04 .div1 .y_yuan{ position: absolute; right:65%; top: 43%; width: 3.281%;}
+.swiper1 .slide_04 .div1 a.y_wenzi{ position: absolute; top: 48%; right: 42%; width: 255px; color: #fff; }
+.swiper1 .slide_04 .div1 a.y_wenzi dt{ font-size: 26px; line-height: 26px; margin-bottom: 13px;}
+.swiper1 .slide_04 .div1 a.y_wenzi dd{ font-size: 16px; line-height: 30px; color: #c4c4c4;}
+.swiper1 .slide_04 .div1 a.y_wenzi dd bdo{ display: block; color: #fff; width: 120px; height: 20px; line-height: normal; line-height: 18px; margin-top: 30px; letter-spacing: 5px; background: #f08400; text-align: center; }
+.swiper1 .slide_04 .div1 a.y_wenzi dd bdo img{ display: inline-block; position: relative; margin:0px 0px 0px 7px; top: 2px; }
+
+/*active*/
+.swiper1 .active.y_sss .y_zi{animation: fadeIn 1s ease 1s both;}
+.swiper1 .active.y_sss .mg1{animation: fadeIn 1s ease 1s both;}
+.swiper1 .active.y_sss .y_xian{animation: fadeIn 1.5s ease 1.5s both;}
+.swiper1 .active.y_sss .y_yuan{animation: fadeInRight 1.8s ease 1.7s both;}
+.swiper1 .active.y_sss .y_wenzi{animation: fadeInLeft 2s ease 1.5s both;}
+
+
+
+/*蛋椅影院*/
+/*one*/
+.swiper2 .slide_01 .div1{ width: 100%; height: 67.781%;}
+.swiper2 .slide_01 .div1 .mg1{ height: 100%; position: absolute; left: 16.875%; z-index: 0;}
+.swiper2 .slide_01 .y_mc{ width: 100%; height: 100%; position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; z-index: 2; background: url(../images/y_mc.png) repeat; }
+.swiper2 .slide_01 .div3{ position: absolute; left: 0px; right: 0px; top: 0px; bottom:0; width: 100%; height: 100%; z-index: 999;}
+.swiper2 .slide_01 .div3 .y_dian_01{ width: 2.5%; position: absolute; top: 32.857%; right:36%; }
+.swiper2 .slide_01 .div3 .wenzi_01{ position: absolute; right: 40%; top: 16%;  width: 240px; font-size: 16px; line-height: 30px; color: #c4c4c4;}
+.swiper2 .slide_01 .div3 .wenzi_01 span.span1{ display: block; font-size: 20px; color: #fff; line-height: 20px; margin-bottom: 15px; }
+.swiper2 .slide_01 .div3 .y_xian_01{position: absolute; height: 20%; right: 36%; top: 34.935%;}
+.swiper2 .slide_01 .div3 .y_dian_02{ width: 2.5%; position: absolute; top: 54%; right:38%; }
+.swiper2 .slide_01 .div3 .wenzi_02{ position: absolute; right: 42%; top: 47%;  width: 176px; font-size: 16px; line-height: 30px; color: #c4c4c4;}
+.swiper2 .slide_01 .div3 .wenzi_02 span.span1{ display: block; font-size: 20px; color: #fff; line-height: 20px; margin-bottom: 15px; }
+.swiper2 .slide_01 .div3 .y_xian_02{position: absolute; height: 13.376%; right: 40%; top: 56%;}
+.swiper2 .slide_01 .div3 .y_dian_03{ width: 2.5%; position: absolute; top: 68%; right:55%; }
+.swiper2 .slide_01 .div3 .wenzi_03{ position: absolute; right: 17%; top: 69%;  width: 234px; font-size: 16px; line-height: 30px; color: #c4c4c4;}
+.swiper2 .slide_01 .div3 .wenzi_03 span.span1{ display: block; font-size: 20px; color: #fff; line-height: 20px; margin-bottom: 15px; }
+.swiper2 .slide_01 .div3 .y_dian_04{ width: 2.5%; position: absolute; top: 80%; right:59%; }
+.swiper2 .slide_01 .div3 .y_xian_03{position: absolute; height: 4.805%; right:61%; top: 76%;}
+.swiper2 .slide_01 .div3 .wenzi_04{ position: absolute; right: 72%; top: 75%;  width: 144px; font-size: 16px; line-height: 30px; color: #c4c4c4;}
+.swiper2 .slide_01 .div3 .wenzi_04 span.span1{ display: block; font-size: 20px; color: #fff; line-height: 20px; margin-bottom: 15px; margin-right: 15px; }
+
+/*active*/
+.swiper2 .active.y_sss1 .mg1{ animation: fadeIn 1s ease 1s both;}
+.swiper2 .active.y_sss1 .y_dian_01{ animation: fadeIn 1s ease 1.5s both;}
+.swiper2 .active.y_sss1 .wenzi_01{ animation: fadeInRight 1s ease 2s both;}
+.swiper2 .active.y_sss1 .y_xian_01{animation: fadeIn 1s ease 2.5s both;}
+.swiper2 .active.y_sss1 .y_dian_02{ animation: fadeIn 1s ease 3s both;}
+.swiper2 .active.y_sss1 .wenzi_02{ animation: fadeInRight 1s ease 3.5s both;}
+.swiper2 .active.y_sss1 .y_xian_02{ animation: fadeIn 1s ease 4s both;}
+.swiper2 .active.y_sss1 .y_dian_03{ animation: fadeIn 1s ease 4.5s both;}
+.swiper2 .active.y_sss1 .wenzi_03{ animation: fadeInRight 1s ease 5s both;}
+.swiper2 .active.y_sss1 .y_dian_04{ animation: fadeIn 1s ease 5.5s both;}
+.swiper2 .active.y_sss1 .y_xian_03{ animation: fadeIn 1s ease 6s both;}
+.swiper2 .active.y_sss1 .wenzi_04{ animation: fadeInLeft 1s ease 6.5s both;}
+
+/*two*/
+.swiper2 .slide_02 .div1{ height: 80.985%; position: relative; margin:0 auto; }
+.swiper2 .slide_02 .div1 .art_01{ width: 508px; margin:0 auto; color: #fff; font-size: 16px; line-height: 28px; }
+.swiper2 .slide_02 .div1 .art_01 .y_zi{ display:block; margin-bottom: 15px;}
+.swiper2 .slide_02 .div1 .art_01 a{ display: block; color: #fff; width: 120px; height: 20px; line-height: normal; line-height:18px; margin-top: 30px; letter-spacing: 5px; background: #f08400; text-align: center; }
+.swiper2 .slide_02 .div1 .art_01 a img{ display: inline-block; position: relative; margin:0px 7px 0px 0px; top: 2px; }
+.swiper2 .slide_02 .div1 .mg1{ position: absolute; right: 0px; bottom:0;}
+
+
+/*active*/
+.swiper2 .active.y_sss2 .mg1{animation: bounceInDown 1.5s ease 0.5s both;}
+.swiper2 .active.y_sss2 .div1 .art_01 .y_zi{animation: fadeInLeft 1.5s ease 1.8s both;}
+.swiper2 .active.y_sss2 .div1 .art_01 .div_z{animation: fadeIn 1.5s ease 3.5s both;}
+
+
+/*雪竞*/
+/*one*/
+.swiper3 .slide_01 .div1{ width: 100%; height: 65.404%;}
+.swiper3 .slide_01 .div1 .mg1{ width: 100%; position: absolute; left:0; z-index: 0;}
+.swiper3 .slide_01 .y_mc{ width: 100%; height: 100%; position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; z-index: 2; background: url(../images/y_mc.png) repeat; }
+.swiper3 .slide_01 .div3{ position: absolute; left: 0px; right: 0px; top: 0px; bottom:0; width: 100%; height: 100%; z-index: 999;}
+.swiper3 .slide_01 .div3 .y_dian_01{ width: 2.5%; position: absolute; top: 28%; left:19.531%; }
+.swiper3 .slide_01 .div3 .wenzi_01{ position: absolute; left:19.531%; top: 38%;  width: 218px; font-size: 16px; line-height: 30px; color: #c4c4c4;}
+.swiper3 .slide_01 .div3 .wenzi_01 span.span1{ display: block; font-size: 20px; color: #fff; line-height: 20px; margin-bottom: 10px; }
+.swiper3 .slide_01 .div3 .y_xian_01{position: absolute; height: 16%; left: 21%; top: 12%;}
+.swiper3 .slide_01 .div3 .y_dian_02{ width: 2.5%; position: absolute; top: 11%; left:44%; }
+.swiper3 .slide_01 .div3 .wenzi_02{ position: absolute; left: 13%; top: -6%;  width:212px; font-size: 16px; line-height: 30px; color: #c4c4c4;}
+.swiper3 .slide_01 .div3 .wenzi_02 span.span1{ display: block; font-size: 20px; color: #fff; line-height: 20px; margin-bottom: 10px; }
+.swiper3 .slide_01 .div3 .y_xian_02{position: absolute; width: 34.325%; left: 46.5%; top: 9.985%;}
+.swiper3 .slide_01 .div3 .y_dian_03{ width: 2.5%; position: absolute; top: 16%; right:18%; }
+.swiper3 .slide_01 .div3 .wenzi_03{ position: absolute; right: 16%; top: 21%;  width: 252px; font-size: 16px; line-height: 30px; color: #c4c4c4;}
+.swiper3 .slide_01 .div3 .wenzi_03 span.span1{ display: block; font-size: 20px; color: #fff; line-height: 20px; margin-bottom: 10px; margin-right: 13px; }
+.swiper3 .slide_01 .div3 .y_dian_04{ width: 2.5%; position: absolute; bottom: -2%; left:42%; }
+.swiper3 .slide_01 .div3 .y_xian_03{position: absolute; width:13.855%; left:28.5%; bottom:-1%;}
+.swiper3 .slide_01 .div3 .wenzi_04{ position: absolute; left:1%; bottom: 0%;  width: 202px; font-size: 16px; line-height: 30px; color: #c4c4c4;}
+.swiper3 .slide_01 .div3 .wenzi_04 span.span1{ display: block; font-size: 20px; color: #fff; line-height: 20px; margin-bottom: 10px; margin-right:40px; }
+
+
+/*active*/
+.swiper3 .active.y_sss1 .mg1{ animation: fadeIn 1s ease 1s both;}
+.swiper3 .active.y_sss1 .y_dian_01{ animation: fadeIn 1s ease 1.5s both;}
+.swiper3 .active.y_sss1 .wenzi_01{ animation: fadeInLeft 1s ease 2s both;}
+.swiper3 .active.y_sss1 .y_xian_01{animation: fadeIn 1s ease 2.5s both;}
+.swiper3 .active.y_sss1 .y_dian_02{ animation: fadeIn 1s ease 3s both;}
+.swiper3 .active.y_sss1 .wenzi_02{ animation: fadeInLeft 1s ease 3.5s both;}
+.swiper3 .active.y_sss1 .y_xian_02{ animation: fadeIn 1s ease 4s both;}
+.swiper3 .active.y_sss1 .y_dian_03{ animation: fadeIn 1s ease 4.5s both;}
+.swiper3 .active.y_sss1 .wenzi_03{ animation: fadeInRight 1s ease 5s both;}
+.swiper3 .active.y_sss1 .y_dian_04{ animation: fadeIn 1s ease 5.5s both;}
+.swiper3 .active.y_sss1 .y_xian_03{ animation: fadeIn 1s ease 6s both;}
+.swiper3 .active.y_sss1 .wenzi_04{ animation: fadeInLeft 1s ease 6.5s both;}
+
+
+/*two*/
+.swiper3 .slide_02 .div1{ height: 80.985%; position: relative; margin:0 auto; }
+.swiper3 .slide_02 .div1 .art_01{ width: 508px; margin:0 auto; color: #fff; font-size: 16px; line-height: 28px; }
+.swiper3 .slide_02 .div1 .art_01 .y_zi{ display:block; margin-bottom: 15px;}
+.swiper3 .slide_02 .div1 .art_01 a{ display: block; color: #fff; width: 120px; height: 20px; line-height: normal; line-height: 18px; margin-top: 30px; letter-spacing: 5px; background: #f08400; text-align: center; }
+.swiper3 .slide_02 .div1 .art_01 a img{ display: inline-block; position: relative;  margin:0px 7px 0px 0px; top: 2px;  }
+.swiper3 .slide_02 .div1 .mg1{ position: absolute; right: 0px; bottom:-10%;}
+
+/*active*/
+.swiper3 .active.y_sss2 .mg1{animation: bounceInDown 1.5s ease 0.5s both;}
+.swiper3 .active.y_sss2 .div1 .art_01 .y_zi{animation: fadeInLeft 1.5s ease 1.8s both;}
+.swiper3 .active.y_sss2 .div1 .art_01 .div_z{animation: fadeIn 1.5s ease 3.5s both;}
+
+
+/*乐客骑士*/
+/*one*/
+.swiper4 .slide_01 .div1{ width: 100%; height:76%;}
+.swiper4 .slide_01 .div1 .mg1{ height: 100%; position: absolute; right:0; top: 10%; z-index: 0;}
+.swiper4 .slide_01 .y_mc{ width: 100%; height: 100%; position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; z-index: 2; background: url(../images/y_mc.png) repeat; }
+.swiper4 .slide_01 .div3{ position: absolute; left: 0px; right: 0px; top: 0px; bottom:0; width: 100%; height: 100%; z-index: 999;}
+.swiper4 .slide_01 .div3 .y_dian_01{ width: 2.5%; position: absolute; top: 18%; right:29%; }
+.swiper4 .slide_01 .div3 .y_xian_01{position: absolute; height: 11.625%; right: 30%; top: 6.5%;}
+.swiper4 .slide_01 .div3 .wenzi_01{ position: absolute; right:40%; top: -4%;  width: 192px; font-size: 16px; line-height: 30px; color: #c4c4c4;}
+.swiper4 .slide_01 .div3 .wenzi_01 span.span1{ display: block; font-size: 20px; color: #fff; line-height: 20px; margin-bottom: 10px; }
+.swiper4 .slide_01 .div3 .y_dian_02{ width: 2.5%; position: absolute; top: 28%; right:34%; }
+.swiper4 .slide_01 .div3 .wenzi_02{ position: absolute; right: 38%; top: 22%;  width:184px; font-size: 16px; line-height: 30px; color: #c4c4c4;}
+.swiper4 .slide_01 .div3 .wenzi_02 span.span1{ display: block; font-size: 20px; color: #fff; line-height: 20px; margin-bottom: 10px; }
+.swiper4 .slide_01 .div3 .y_xian_02{position: absolute; height: 21%; right: 28%; top:30%;}
+.swiper4 .slide_01 .div3 .y_dian_03{ width: 2.5%; position: absolute; top: 50%; right:28%; }
+.swiper4 .slide_01 .div3 .wenzi_03{ position: absolute; right: 4%; top: 46%;  width: 150px; font-size: 16px; line-height: 30px; color: #c4c4c4;}
+.swiper4 .slide_01 .div3 .wenzi_03 span.span1{ display: block; font-size: 20px; color: #fff; line-height: 20px; margin-bottom: 10px; margin-right: 13px; }
+.swiper4 .slide_01 .div3 .y_xian_03{position: absolute; height:11.625%; right:29.5%; top:52%;}
+.swiper4 .slide_01 .div3 .y_dian_04{ width: 2.5%; position: absolute; top: 63%; right:38%; }
+.swiper4 .slide_01 .div3 .wenzi_04{ position: absolute; right:20%; top: 68%;  width: 144px; font-size: 16px; line-height: 30px; color: #c4c4c4;}
+.swiper4 .slide_01 .div3 .wenzi_04 span.span1{ display: block; font-size: 20px; color: #fff; line-height: 20px; margin-bottom: 10px;}
+.swiper4 .slide_01 .div3 .y_dian_05{ width: 2.5%; position: absolute; top: 71%; right:47%; }
+.swiper4 .slide_01 .div3 .y_xian_04{position: absolute; width:14.843%; right:48%; top:60%;}
+.swiper4 .slide_01 .div3 .wenzi_05{ position: absolute; right:60%; top: 57%;  width: 160px; font-size: 16px; line-height: 30px; color: #c4c4c4;}
+.swiper4 .slide_01 .div3 .wenzi_05 span.span1{ display: block; font-size: 20px; color: #fff; line-height: 20px; margin-bottom: 10px; margin-right: 10px; }
+
+
+/*active*/
+.swiper4 .active.y_sss1 .mg1{ animation: fadeIn 1s ease 1s both;}
+.swiper4 .active.y_sss1 .y_dian_01{ animation: fadeIn 1s ease 1.5s both;}
+.swiper4 .active.y_sss1 .y_xian_01{animation: fadeIn 1s ease 2s both;}
+.swiper4 .active.y_sss1 .wenzi_01{ animation: fadeInLeft 1s ease 2.5s both;}
+.swiper4 .active.y_sss1 .y_dian_02{ animation: fadeIn 1s ease 3s both;}
+.swiper4 .active.y_sss1 .wenzi_02{ animation: fadeInLeft 1s ease 3.5s both;}
+.swiper4 .active.y_sss1 .y_xian_02{ animation: fadeIn 1s ease 4s both;}
+.swiper4 .active.y_sss1 .y_dian_03{ animation: fadeIn 1s ease 4.5s both;}
+.swiper4 .active.y_sss1 .wenzi_03{ animation: fadeInRight 1s ease 5s both;}
+.swiper4 .active.y_sss1 .y_xian_03{ animation: fadeIn 1s ease 5.5s both;}
+.swiper4 .active.y_sss1 .y_dian_04{ animation: fadeIn 1s ease 6s both;}
+.swiper4 .active.y_sss1 .wenzi_04{ animation: fadeInRight 1s ease 6.5s both;}
+
+.swiper4 .active.y_sss1 .y_dian_05{ animation: fadeIn 1s ease 7s both;}
+.swiper4 .active.y_sss1 .y_xian_04{ animation: fadeIn 1s ease 7.5s both;}
+.swiper4 .active.y_sss1 .wenzi_05{ animation: fadeInLeft 1s ease 8s both;}
+
+
+/*two*/
+.swiper4 .slide_02 .div1{ height: 80.985%; position: relative; margin:0 auto; }
+.swiper4 .slide_02 .div1 .art_01{ width: 508px; margin:0 auto; color: #fff; font-size: 16px; line-height: 28px; }
+.swiper4 .slide_02 .div1 .art_01 .y_zi{ display:block; margin-bottom: 15px;}
+.swiper4 .slide_02 .div1 .art_01 a{ display: block; color: #fff; width: 120px; height: 20px; line-height: normal; line-height: 18px; margin-top: 30px; letter-spacing: 5px; background: #f08400; text-align: center; }
+.swiper4 .slide_02 .div1 .art_01 a img{ display: inline-block; position: relative; margin:0px 7px 0px 0px; top: 2px;  }
+.swiper4 .slide_02 .div1 .mg1{ position: absolute; right: 0px; bottom:-10%;}
+
+/*active*/
+.swiper4 .active.y_sss2 .mg1{animation: bounceInDown 1.5s ease 0.5s both;}
+.swiper4 .active.y_sss2 .div1 .art_01 .y_zi{animation: fadeInLeft 1.5s ease 1.8s both;}
+.swiper4 .active.y_sss2 .div1 .art_01 .div_z{animation: fadeIn 1.5s ease 3.5s both;}
+
+
+
+/*乐客探索*/
+/*one*/
+.swiper5 .slide_01 .div1{ width: 100%; height: 76%;}
+.swiper5 .slide_01 .div1 .mg1{ height: 100%; position: absolute; left:30%; top: 8%; z-index: 0;}
+.swiper5 .slide_01 .y_mc{ width: 100%; height: 100%; position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; z-index: 2; background: url(../images/y_mc.png) repeat; }
+.swiper5 .slide_01 .div3{ position: absolute; left: 0px; right: 0px; top: 0px; bottom:0; width: 100%; height: 100%; z-index: 999;}
+.swiper5 .slide_01 .div3 .y_dian_01{ width: 2.5%; position: absolute; top: 15.5%; left:40.5%; }
+.swiper5 .slide_01 .div3 .wenzi_01{ position: absolute; left:45%; top: 0%;  width: 224px; font-size: 16px; line-height: 30px; color: #c4c4c4;}
+.swiper5 .slide_01 .div3 .wenzi_01 span.span1{ display: block; font-size: 20px; color: #fff; line-height: 20px; margin-bottom: 10px; }
+.swiper5 .slide_01 .div3 .y_xian_01{position: absolute; height:31.5%; left: 42.5%; top: 17%;}
+.swiper5 .slide_01 .div3 .y_dian_02{ width: 2.5%; position: absolute; top: 48.5%; left:65.5%; }
+.swiper5 .slide_01 .div3 .wenzi_02{ position: absolute; left: 24%; top: 49%;  width:256px; font-size: 16px; line-height: 30px; color: #c4c4c4;}
+.swiper5 .slide_01 .div3 .wenzi_02 span.span1{ display: block; font-size: 20px; color: #fff; line-height: 20px; margin-bottom: 10px; }
+.swiper5 .slide_01 .div3 .y_xian_02{position: absolute; height: 16%; left: 67.5%; top:50%;}
+.swiper5 .slide_01 .div3 .y_dian_03{ width: 2.5%; position: absolute; top: 66%; left:68.5%; }
+.swiper5 .slide_01 .div3 .wenzi_03{ position: absolute; left: 58%; top: 67%;  width: 225px; font-size: 16px; line-height: 30px; color: #c4c4c4;}
+.swiper5 .slide_01 .div3 .wenzi_03 span.span1{ display: block; font-size: 20px; color: #fff; line-height: 20px; margin-bottom: 10px;}
+
+
+.swiper5 .slide_01 .div3 .y_dian_04{ width: 2.5%; position: absolute; top: 83%; left:50%; }
+.swiper5 .slide_01 .div3 .y_xian_03{position: absolute; height:8%; left:34%; top:83%;}
+.swiper5 .slide_01 .div3 .wenzi_04{ position: absolute; left:3%; bottom: -10%;  width: 192px; font-size: 16px; line-height: 30px; color: #c4c4c4;}
+.swiper5 .slide_01 .div3 .wenzi_04 span.span1{ display: block; font-size: 20px; color: #fff; line-height: 20px; margin-bottom: 10px;}
+
+/*active*/
+.swiper5 .active.y_sss1 .mg1{ animation: fadeIn 1s ease 1s both;}
+.swiper5 .active.y_sss1 .y_dian_01{ animation: fadeIn 1s ease 1.5s both;}
+.swiper5 .active.y_sss1 .wenzi_01{ animation: fadeInLeft 1s ease 2s both;}
+.swiper5 .active.y_sss1 .y_xian_01{animation: fadeIn 1s ease 2.5s both;}
+.swiper5 .active.y_sss1 .y_dian_02{ animation: fadeIn 1s ease 3s both;}
+.swiper5 .active.y_sss1 .wenzi_02{ animation: fadeInLeft 1s ease 3.5s both;}
+.swiper5 .active.y_sss1 .y_xian_02{ animation: fadeIn 1s ease 4s both;}
+.swiper5 .active.y_sss1 .y_dian_03{ animation: fadeIn 1s ease 4.5s both;}
+.swiper5 .active.y_sss1 .wenzi_03{ animation: fadeInRight 1s ease 5s both;}
+.swiper5 .active.y_sss1 .y_dian_04{ animation: fadeIn 1s ease 5.5s both;}
+.swiper5 .active.y_sss1 .y_xian_03{ animation: fadeIn 1s ease 6s both;}
+.swiper5 .active.y_sss1 .wenzi_04{ animation: fadeInLeft 1s ease 6.5s both;}
+
+
+/*two*/
+.swiper5 .slide_02 .div1{ height: 80.985%; position: relative; margin:0 auto; }
+.swiper5 .slide_02 .div1 .art_01{ width: 508px; margin:0 auto; color: #fff; font-size: 16px; line-height: 28px; }
+.swiper5 .slide_02 .div1 .art_01 .y_zi{ display:block; margin-bottom: 15px;}
+.swiper5 .slide_02 .div1 .art_01 a{ display: block; color: #fff; width: 120px; height: 20px; line-height: normal; line-height: 18px; margin-top: 30px; letter-spacing: 5px; background: #f08400; text-align: center; }
+.swiper5 .slide_02 .div1 .art_01 a img{ display: inline-block; position: relative; margin:0px 7px 0px 0px; top: 2px; }
+.swiper5 .slide_02 .div1 .mg1{ width: 85.625%; position: absolute; right: 0px; bottom:-10%;}
+
+/*active*/
+.swiper5 .active.y_sss2 .mg1{animation: bounceInDown 1.5s ease 0.5s both;}
+.swiper5 .active.y_sss2 .div1 .art_01 .y_zi{animation: fadeInLeft 1.5s ease 1.8s both;}
+.swiper5 .active.y_sss2 .div1 .art_01 .div_z{animation: fadeIn 1.5s ease 3.5s both;}
+
+
+
+
+/* 寻求合作-游戏代理 */
+.yxdl_main{ width:640px; height:100%; padding-top:158px;}
+.yxdl_main_nr{ width:558px; margin-left:82px;}
+.yxdl_main_nr h2{ font-size:27px; color: #fff; width: 558px; line-height:100%; }
+.yxdl_main_nr1{ font-size:18px; color: #fff; width: 500px; line-height: 40px; margin-top: 20px; padding: 10px 58px 155px 0; border-top: 1px dashed #949494; }
+
+/* 寻求合作-品牌合作 */
+.pphz_main{ width:640px; height:100%; padding-top:158px; position:relative;}
+.pphz_main1{ width:558px; margin-left:82px;}
+.pphz_main1 h2{ font-size:27px; color: #fff; width: 558px; line-height:100%; }
+.pphz_main1_nr{ font-size:18px; color: #fff; width: 500px; line-height: 40px; margin-top: 20px; padding: 10px 58px 0px 0; border-top: 1px dashed #949494; }
+.pphz_main2{ width:640px; height:304px; background: url(../images/bg1.png) no-repeat; position:absolute; left:0px; bottom:0px;}
+.pphz_main2 ul{ width:640px; height:304px;}
+.pphz_main2 ul li{ width:319px; height:151px; margin:0 1px 1px 0;}
+.pphz_main2 ul li a{ width:319px; height:151px; display:block;}
+.pphz_main2 ul li a p{ width:56px; height:54px; margin:30px 0 0 40px; padding:18px 17px; background: url(../images/bg2.png) no-repeat;}
+.pphz_main2 ul li a span{ font-size:16px; color:#fff; height:90px; line-height:90px; margin:30px 0 0 20px;}
+
+/* 寻求合作-推荐游戏 */
+.tjyx_main{ width:640px; height:100%; padding-top:100px;/* background: url(../images/pic1.jpg) no-repeat center;*/}
+.tjyx_main_nr{ width:558px; margin-left:82px;}
+.tjyx_main_nr1{ width:558px;}
+.tjyx_main_nr1 h2{ font-size:27px; color: #fff; width: 558px; height:66px; line-height:100%; border-bottom: 1px dashed #949494; }
+.tjyx_main_nr2{ width: 480px; line-height: 40px; margin-top: 40px; padding: 0px 18px 25px; background-color:#22222c; border-radius:10px; }
+.tjyx_main_nr2 h2{ font-size:18px; color: #c1c1c1; width: 462px; height:78px; line-height:78px; padding-left:18px;}
+.tjyx_main_nr2 ul{ width:480px; margin-top:-10px; }
+.tjyx_main_nr2 ul li{ width:480px; margin-top:10px; }
+.tjyx_main_nr2 ul li .wbk1{ font-size:18px; color: #c1c1c1; width:440px; height:62px; line-height:62px; padding:0 20px; background-color:#18181f; border:0px; border-radius:10px;}
+.tjyx_main_nr2 ul li .wbk2{ font-size:18px; color: #c1c1c1; width:440px; height:208px; line-height:36px; padding:5px 20px; background-color:#18181f; border:0px; border-radius:10px;}
+.tjyx_main_nr3{ width: 480px; margin-top:20px;}
+.tjyx_main_nr3 p{ font-size:12px; color:#c1c1c1; width: 480px; line-height:30px;}
+.tjyx_main_nr3 span{ width: 480px; display:block;}
+.tjyx_main_nr3 span .btn{ font-size:18px; color:#000; width: 120px; height:40px; line-height:40px; text-align:center; background-color:#e68100; border:0px; border-radius:5px;}
+
+/* 关于我们 */
+.gywm_main{ width:640px; height:100%; padding-top:158px;}
+.gywm_main_nr{ font-size:18px; color:#fff; width:505px; line-height:30px; margin-left:82px;}
+.gywm_main_nr span.bt{ font-size:30px; margin-bottom:40px; display:block;}
+
+/* 资讯 */
+.zx_main{ width:640px; height:100%; padding-top:78px;}
+.zx_main1{ width:640px; height:375px; margin-bottom:10px; position:relative;}
+.zx_main1 p{ width:640px; height:375px;}
+.zx_main1 p img{ width:640px; height:375px;}
+.zx_main1 span a{ font-size:18px; color:#c4c4c4; width:610px; height:108px; padding:60px 15px 0; background: url(../images/bg7.png) repeat-x; position: absolute; left: 0px; bottom: 0px; display:block;}
+.zx_main1 span a em{ font-size:26px; font-style:normal; margin-bottom:8px; display:block;}
+
+/* 资讯弹窗 */
+.zx1{ background: url(../images/bg8.png) repeat; position:fixed; top:0px; left:0px; width:100%; height:100%; z-index:20000; display: none; }
+.tcdiv1{ font-size:18px; color:#c4c4c4; width:580px; line-height:40px; margin-left:-320px; padding: 90px 30px 30px; position:fixed; top:0px; left:50%; z-index:30000; overflow-x:hidden; overflow-y:auto; display:none;}
+.tcdiv1 span.bt{ font-size:26px; color:#fff; margin:28px 0 10px; display:block;}
+.tcdiv1 .gb{ position:absolute; top:20px; right:20px; }
+/*2016-08-17*/
+.y_phone{ position: fixed; z-index: 999999; left: 20px; bottom:20px; color: #fff; font-size: 22px; font-weight: bold;}
+.y_phone img{ float: left; margin-right: 20px; }
+.y_phone span{ float: left; line-height: 22px; margin-top: 30px; }
+

@@ -1,0 +1,167 @@
+<!DOCTYPE html><html><head lang="en">	<meta charset="UTF-8">	<title>资讯 - 北京梦境时代科技有限公司</title>	<meta name="keywords" content="北京梦境时代科技有限公司">	<meta name="description" content="北京梦境时代科技有限公司
+">	   <link rel="stylesheet" href="../../../Public/Home/css/common.css" />     <link rel="stylesheet" href="../../../Public/Home/css/jquery.fullPage.css" />     <link rel="stylesheet" href="../../../Public/Home/css/animate.min.css" />     <link rel="stylesheet" href="../../../Public/Home/css/style.css" />		 <link rel="stylesheet" href="../../../Public/Home/css/jquery.jscrollpane.css" />     <script src="../../../Public/Home/js/jquery-1.9.1.min.js"></script>		 <script src="../../../Public/Home/js/jquery.min.js"></script>     <script src="../../../Public/Home/js/jquery.fullPage.min.js"></script>     <script src="../../../Public/Home/js/myjs.js"></script>     <script src="../../../Public/Home/js/jquery.SuperSlide.2.1.1.js"></script>		 	<!--[if lt IE 9]>    <script src="/Public/Home/js/html5shiv.min.js"></script>    <script src="/Public/Home/js/respond.min.js"></script>    <![endif]-->		<script type="text/javascript">var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " ../../../../index.htm");document.write(unescape("%3Cscript src='"%20+%20_bdhmProtocol%20+/index.htm"hm.baidu.com/h.js%3F720d79ad9b3cb85ff446f7f9aa5ff619' type='text/javascript'%3E%3C/script%3E"));</script>     
+<script type="text/javascript">
+         $(document).ready(function() {
+             $('#dowebok').fullpage({
+                 anchors: ['page1', 'page2', 'page3','page4', 'page5', 'page6','page7', 'page8', 'page9','page10', 'page11', 'page12','page13', 'page14', 'page15','page16', 'page17', 'page18','page19', 'page20', 'page21'],
+                 menu: '#menu'
+             });
+ 			function aa(){
+                 var wW = $(window).width();
+                 var wH  = $(window).height();
+                 $('.mgbg').each(function() {
+                     $('.mgbg').css('left', -(2560-wW)/2);
+                     $('.mgbg').css('margin-top', -(1440-wH)/2)
+                 });
+             }
+ 			aa();
+             $(window).resize(function(){
+                 aa();
+             })
+         });
+     </script>
+     <!--下拉滚动条-->
+  <script type="text/javascript" id="sourcecode">
+  $(function()
+          {
+            $(window).load(function(){
+                $('.scroll-pane').jScrollPane(
+                    {
+                        hijackInternalLinks: true
+                    }
+                );
+            })
+
+
+			    //弹窗
+          window.tanchuang = function(id, str){
+
+                   $.ajax({
+                         type:'post',
+                         async: false,
+                         url:'/Index/ajax.html',
+                         data:'id='+str,
+                         dataType:'json',
+                         success:function(data){
+
+
+
+                          $('.zx1').fadeIn();
+                          $('.tcdiv1').css('z-index',9999999999999);
+                          $('.tcdiv1').css('margin-top',($(window).height()-$('.tcdiv1').height())/2);
+                           $.fn.fullpage.setAllowScrolling(false);
+
+                           if(data.image){
+                             var content = '<div class="scroll-pane"><div class="tcdiv1_nr"><img src="/Uploads/'+data.image+'" class="db"><span class="bt">'+data.title+'</span>'+data.content+'</div></div>';
+
+                           }else{
+                             var content = '<div class="scroll-pane"><div class="tcdiv1_nr"><img src="/Uploads/'+data.thumb+'" class="db"><span class="bt">'+data.title+'</span>'+data.content+'</div></div>';
+
+                           }
+
+                            $('#container').html(content);
+                             setTimeout(function(){
+
+                              $('.scroll-pane').jScrollPane(
+                                        {
+                                            hijackInternalLinks: true
+                                        }
+                                    );
+                            },500)
+                        }
+
+                  });
+
+
+          }
+
+          });
+  </script>
+		 </head><body><header><section class="header auto fix rel">    <a href="../../index.html" class="fl logo"><img src="../../../Public/Home/images/logo.png" width="65" height="20"></a>    <nav class="fl">			<a href="1.html"  >产品</a><a href="2.html"  class="xz">资讯</a><a href="3.html"  >寻求合作</a><a href="4.html"  >关于我们</a><a href="../../../../www.vrle.cc/game/56.html" target="_blank" ></a>    </nav>    <img src="../../../Public/Home/images/nav_xian.png" width="1200" height="1">		  <a href="../../../oldleke/index.htm" target="_blank" class=""></a>	</section></header>
+
+  <div id="dowebok">
+              <div class="section zx_main">
+          <div class="zx_main_nr auto fix">
+              <div class="zx_main_nrk fl fix">
+                  <div class="zx_main_nrk1 fl">
+                    <p><a href="javascript:void(0);" title="你创业我投资" onClick="tanchuang(1,'5')">
+                          <img src="../../../Uploads/Content/2016-07-25/579585a419c97.jpg" class="db"></a></p>
+  	                    <span><a href="javascript:void(0);" onClick="tanchuang(1,'5')">
+  	                        <em>你创业我投资</em>
+  	                        乐客VR携手乐动世界VR-Park强力打造VRPark黄金5  	                    </a></span>                  </div>
+                  <div class="zx_main_nrk2 fl fix">
+                      <div class="zx_main_nrk2_nr fl">
+                          <p><a href="javascript:void(0);" title="即将攻占人类生活！VR到底有何魔力？" onClick="tanchuang(1,'6')">
+                          <img src="../../../Uploads/Content/2016-07-25/57959a915c024.jpg" class="db"></a></p>
+  	                    <span><a href="javascript:void(0);" onClick="tanchuang(1,'6')">
+  	                        <em>即将攻占人类生活！V</em>
+  	                        你或许没有听过虚拟现实，但相信一定有听过VR！但是就算听过V  	                    </a></span>                      </div>
+                      <div class="zx_main_nrk2_nr fr">
+                          <p><a href="javascript:void(0);" title="SDK连城诀"  onClick="tanchuang(1,'16')"><img src="../../../Uploads/Content/2016-07-27/57982de7c9efe.jpg" class="db"></a></p>
+	                        <span><a href="javascript:void(0);" title="SDK连城诀" onClick="tanchuang(1,'16')">
+	                            <em>SDK连城诀</em>
+	                        SDK连城诀SDK连城诀SDK连城诀SDK连城诀SDK连城诀	                        </a></span>                      </div>
+                      <div class="zx_main_nrk2_nr fl">
+                          <p><a href="javascript:void(0);" title="乐客VR-中国最具价值创业企业"  onClick="tanchuang(1,'7')"><img src="../../../Uploads/Content/2016-07-25/57959c9278359.jpg" class="db"></a></p>
+	                        <span><a href="javascript:void(0);" title="乐客VR-中国最具价值创业企业" onClick="tanchuang(1,'7')">
+	                            <em>乐客VR-中国最具价</em>
+	                        乐客VR作为2015年创业的科技公司，凭借出色的研发实力以及	                        </a></span>                      </div>
+                      <div class="zx_main_nrk2_nr fr">
+                          <p><a href="javascript:void(0);" title="阮经天high翻三里屯VRPark"  onClick="tanchuang(1,'8')"><img src="../../../Uploads/Content/2016-07-25/5795a50341caf.jpg" class="db"></a></p>
+	                        <span><a href="javascript:void(0);" title="阮经天high翻三里屯VRPark" onClick="tanchuang(1,'8')">
+	                            <em>阮经天high翻三里</em>
+	                        近期一档真人秀节目《约吧大明星》一言不合就来到了三里屯新IC	                        </a></span>                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+	  <div class="section zx_main">
+          <div class="zx_main_nr auto fix">
+              <div class="zx_main_nrk fl fix">
+              	<div class="zx_main_nrk3 fl fix mr10">
+                      <div class="zx_main_nrk3_nr fl">
+                        <p><a href="javascript:void(0);" title="国内VR产业现状如何？硬件形态哪种才是主流？未来VR创业者机会何在？"  onClick="tanchuang(1,'10')"><img src="../../../Uploads/Content/2016-07-25/57958f8b02383.jpg" class="db"></a></p>
+	                        <span><a href="javascript:void(0);" title="国内VR产业现状如何？硬件形态哪种才是主流？未来VR创业者机会何在？" onClick="tanchuang(1,'10')">
+	                            <em>国内VR产业现状如何</em>
+	                        虽然国内VR热度持续高涨，但在技术和产品内容上都还存在很大的	                        </a></span>                      </div>
+                      <div class="zx_main_nrk3_nr fr">
+                        <p><a href="javascript:void(0);" title="乐客VR2016ChinaJoy"  onClick="tanchuang(1,'9')"><img src="../../../Uploads/Content/2016-07-25/57958b11e01dd.jpg" class="db"></a></p>
+	                        <span><a href="javascript:void(0);" title="乐客VR2016ChinaJoy" onClick="tanchuang(1,'9')">
+	                            <em>乐客VR2016Ch</em>
+	                        据官方消息，智能娱乐硬件将成为本届CJ的一大亮点，其中作为当	                        </a></span>                      </div>
+                  </div>
+                  <div class="zx_main_nrk1 fl">
+                      <p><a href="javascript:void(0);" title="一款VR头盔的全球之旅"  onClick="tanchuang(1,'11')"><img src="../../../Uploads/Content/2016-07-25/5795a2557e6d9_290-160.jpg" class="db"></a></p>
+	                        <span><a href="javascript:void(0);" title="一款VR头盔的全球之旅" onClick="tanchuang(1,'11')">
+	                            <em>一款VR头盔的全球之</em>
+	                        一款VR头盔的全球之旅：起底Oculus的供应链帝国	                        </a></span>                  </div>
+                  <div class="zx_main_nrk3 fl fix ml10">
+                      <div class="zx_main_nrk3_nr fl">
+                          <p><a href="javascript:void(0);" title="阿里巴巴 BUY+"  onClick="tanchuang(1,'12')"><img src="../../../Uploads/Content/2016-07-25/5795a718cf840_290-160.jpg" class="db"></a></p>
+	                        <span><a href="javascript:void(0);" title="阿里巴巴 BUY+" onClick="tanchuang(1,'12')">
+	                            <em>阿里巴巴 BUY+</em>
+	                        国内互联网巨头阿里巴巴发布造物节BUY+持续发热	                        </a></span>                      </div>
+                      <div class="zx_main_nrk3_nr fr">
+                                                </div>
+                  </div>
+              </div>
+          </div>
+      </div>>  </div>
+  <div class="zx1"></div>
+  <div class="tcdiv1">
+      <div id="container">
+          <div class="scroll-pane">
+              <div class="tcdiv1_nr">
+                  <img src="" class="db">
+                  <span class="bt"></span>
+
+              </div>
+          </div>
+      </div>
+      <div class="gb"><a href="javascript:void(0);"><img src="../../../Public/Home/images/bg10.png" alt="" class="db"></a></div>
+  </div>
+
+<footer class="footer">    © 2015 北京梦境时代科技有限公司 京ICP备15029210号-1        地址：  北京市朝阳区霄云路21号1幢三层（麦子店孵化器0263号）                联系电话：400-101-9066
+
+
+</footer></body></html>
