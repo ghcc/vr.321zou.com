@@ -1,0 +1,1349 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no, email=no" />
+        <link rel="stylesheet" href="/Plugins/Designer/Content/css/jquery-ui.min.css" />
+    <link rel="icon" href="/88743_favicon.ico" />
+    <link rel="shortcut icon" href="/88743_favicon.ico" />
+    <link rel="bookmark" href="/88743_favicon.ico" />
+
+    <title>ZANVR|知感科技|感知实验室</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="zanvr，知感科技，感知实验室，VR职教实训室，VR科普实验室，VR虚拟仿真实验室" />
+
+    <link rel="stylesheet" href="/Plugins/Designer/Content/css/base.pc.css" type="text/css" />
+    <link href="/Plugins/Designer/Content/mw-iconfont/iconfont.css" rel="stylesheet" />
+    <link href="/Plugins/Designer/Content/css/pagerStyle/pager.css" rel="stylesheet" />
+    <link href="/Plugins/Designer/Content/css/base/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="/Plugins/Designer/Content/css/iconfontV2.css" rel="stylesheet" />
+        <link rel="stylesheet" href="RunTime/RenderRunTimeCss_2F024353" type="text/css" />
+
+
+    <script type="text/javascript" src="/Plugins/Designer/Script/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="/Plugins/Designer/Script/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="/Plugins/Designer/Script/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/Scripts/public.common.min.js"></script>
+    <script type="text/javascript" src="/Plugins/Designer/Script/jquery.lazyload.min.js"></script>
+    <script src="/Plugins/Designer/Script/kino.razor.min.js"></script>
+        <script type="text/javascript" src="/Scripts/underscore.js"></script>
+    <script type="text/javascript" src="/Plugins/Designer/Script/jquery.slider.js"></script>
+    <script type="text/javascript" src="/Scripts/jquery.color.js"></script>
+
+    <script language='javascript' type='text/javascript' id='yibuHeaderScript'>
+</script>
+
+
+    <script type="text/javascript" src="/Plugins/Designer/Script/velocity.min.js"></script>
+    <script type="text/javascript" src="/Plugins/Designer/Script/velocity.ui.min.js"></script>
+    <script type="text/javascript" src="/Scripts/jquery.validatestar.min.js"></script>
+
+
+</head>
+<body>
+        <style>
+            .viewSwitch {
+                position: fixed;
+                right: 60px;
+                top: 60px;
+                z-index: 999999999;
+                background-color: white;
+            }
+
+            .deviceSwitch {
+                width: 96px;
+                text-align: center;
+                float: left;
+                box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            }
+
+                .deviceSwitch div {
+                    background-color: #FFF;
+                    width: 48px;
+                    font-size: 20px;
+                    float: left;
+                    color: #222;
+                    cursor: pointer;
+                }
+
+                    .deviceSwitch div:hover {
+                        color: #29A0CB;
+                    }
+
+                    .deviceSwitch div span {
+                        line-height: 48px;
+                    }
+
+                    .deviceSwitch div.active {
+                        background-color: #29A0CB;
+                        color: white;
+                        cursor: auto;
+                    }
+
+                        .deviceSwitch div.active:hover {
+                            color: white;
+                        }
+
+                        .deviceSwitch div.active span {
+                            color: #FFF;
+                        }
+        </style>
+        <div class="viewSwitch" style="display:">
+            <div class="deviceSwitch">
+                <div class="device-pc" data-device="pc" title="点击预览PC版">
+                    <span class="ym-iconfont-web"></span>
+                </div>
+                <div class="device-mobile" data-device="mobile" title="点击预览移动版">
+                    <span class="ym-iconfont-mobile"></span>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            (function($) {
+
+                $.extend({
+                    request: function(m) {
+                        var sValue = location.search.match(new RegExp("[\?\&]" + m + "=([^\&]*)(\&?)", "i"));
+                        return sValue ? sValue[1] : sValue;
+                    },
+                    urlUpdateParams: function(url, name, value) {
+                        var r = url;
+                        if (r != null && r != 'undefined' && r != "") {
+                            value = encodeURIComponent(value);
+                            var reg = new RegExp("(^|)" + name + "=([^&]*)(|$)");
+                            var tmp = name + "=" + value;
+                            if (url.match(reg) != null) {
+                                r = url.replace(eval(reg), tmp);
+                            } else {
+                                if (url.match("[\?]")) {
+                                    r = url + "&" + tmp;
+                                } else {
+                                    r = url + "?" + tmp;
+                                }
+                            }
+                        }
+                        return r;
+                    }
+                });
+            })(jQuery);
+            $(function() {
+                $(".deviceSwitch").find("div[data-device=pc]").addClass("active");
+                $(".deviceSwitch").find("div").not(".active").click(function() {
+                    if (window.location.pathname == "/") {
+                        window.location.href = window.location.origin + "?forceprev=mobile&setprev=mobile";
+                    }else{
+                        var mobileUrl = "../index.htm" + window.location.host + "/prevmobilepage/1265"+window.location.search;
+                        window.location.href = $.urlUpdateParams(mobileUrl, "setprev", $(this).attr("data-device"));
+                    }
+                });
+            });
+        </script>
+    <div  id="view_layout_1_843" class="mainSamrtView yibuSmartViewMargin"   >
+<div class='yibuFrameContent layout_Block2_Item0' style='border-style:none;'>
+       <style type="text/css">
+
+ .header,.main-wrap .main,.footer { position:relative; clear:both; margin:0 auto; padding:0;}
+ .main-wrap { clear:both; margin:0; padding:0; width:auto; }
+ .main-wrap .main {}
+
+.main-wrap .main .content { width:100%;}
+
+body{
+background-color:;
+
+}
+</style>
+
+
+    <div style="*z-index:11;*position:relative;width:100%;height:953px;margin-left:auto;margin-right:auto;background-color:">
+      <div class="header page_header yibuLayout_tempPanel" style="width:1180px;height:953px;background-color:;;">
+           <div class='runTimeflowsmartView'><div  id="view_photoalbum_32_843" class="yibuSmartViewMargin absPos"   >
+<div class='yibuFrameContent overflow_hidden photoalbum_Style2_Item0 view_photoalbum_32_843_Style2_Item0' style='height:950px;width:1180px;'><div class="w_slider_2 renderfullScreen w_slider_2_32">
+
+    <div class="w_slider_img">
+        <ul>
+                <li style="background: url(http://img.wezhan.cn/content/sitefiles/88743/images/7103882_banner.jpeg) center 0 no-repeat;">
+                    <div class="siteWidth">
+
+                        <p class="txt"   style="display:none;"       >
+
+                            <span class="btn"></span>
+                        </p>
+                        <p class="txtDesc"   style="display: none;"         >
+                            图片0
+                        </p>
+
+                        <a   target="_self"                                title="" href="javascript:void(0)"></a>
+
+                    </div>
+                </li>
+                <li style="background: url(http://img.wezhan.cn/content/sitefiles/88743/images/7490742_首页Banner图cjmj.jpeg) center 0 no-repeat;">
+                    <div class="siteWidth">
+
+                        <p class="txt"   style="display:none;"       >
+                            首页Banner图cjmj
+                            <span class="btn"></span>
+                        </p>
+                        <p class="txtDesc"   style="display: none;"         >
+                            图片2
+                        </p>
+
+                        <a   target="_self"                                title="首页Banner图cjmj" href="javascript:void(0)"></a>
+
+                    </div>
+                </li>
+                <li style="background: url(http://img.wezhan.cn/content/sitefiles/88743/images/7490744_首页Banner图drxt.jpeg) center 0 no-repeat;">
+                    <div class="siteWidth">
+
+                        <p class="txt"   style="display:none;"       >
+                            首页Banner图drxt
+                            <span class="btn"></span>
+                        </p>
+                        <p class="txtDesc"   style="display: none;"         >
+                            图片2
+                        </p>
+
+                        <a   target="_self"                                title="首页Banner图drxt" href="javascript:void(0)"></a>
+
+                    </div>
+                </li>
+                <li style="background: url(http://img.wezhan.cn/content/sitefiles/88743/images/7490745_首页Banner图sjdt.jpeg) center 0 no-repeat;">
+                    <div class="siteWidth">
+
+                        <p class="txt"   style="display:none;"       >
+                            首页Banner图sjdt
+                            <span class="btn"></span>
+                        </p>
+                        <p class="txtDesc"   style="display: none;"         >
+                            图片3
+                        </p>
+
+                        <a   target="_self"                                title="首页Banner图sjdt" href="javascript:void(0)"></a>
+
+                    </div>
+                </li>
+        </ul>
+    </div>
+    <!-- 下面是前/后按钮代码，如果不需要删除即可 -->
+    <a   style="display:none;"     class="prev" href="javascript:void(0)"></a>
+    <a   style="display:none;"     class="next" href="javascript:void(0)"></a>
+
+    <div class="w_slider_num" ><ul></ul></div>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        if ("fade"=="fold") {
+            setRenderFullScreen($("#view_photoalbum_32_843"), "window");
+        } else {
+            setRenderFullScreen($("#view_photoalbum_32_843"));
+        }
+        $(".w_slider_2_32").slide({
+            titCell: $(".w_slider_2_32 .w_slider_num ul"),
+            mainCell: $(".w_slider_2_32 .w_slider_img ul"),
+            effect: "fade",
+            autoPlay: "true",
+            autoPage: true,
+            trigger: "mouseover",
+            interTime: "3000"
+        });
+    });
+
+
+</script></div>
+</div>
+<div  id="view_banner_33_843" class="yibuSmartViewMargin absPos yibulocked"   >
+<div class='yibuFrameContent banner_Style1_Item0 view_banner_33_843_Style1_Item0'>    <div id="fullScreen_view_banner_33_843" class="w_container_wrap renderfullScreen" ></div>
+    <script>
+    $(function () {
+        setRenderFullScreen($('#view_banner_33_843'));
+
+    });
+</script>
+
+
+<div class="flowsmartView isflowcontainer w_container_content" refarea="Area_0" id="flowsmartView_33" style=width:1180px;>
+    <div  id="view_text_34_843" class="yibuSmartViewMargin absPos"   >
+<div class='yibuFrameContent overflow_hidden text_Style1_Item0 view_text_34_843_Style1_Item0' style='height:48px;width:150px;'>
+<style type="text/css">
+    #view_text_34_843_txt ul{ padding-left:20px;}
+</style>
+<div id='view_text_34_843_txt'   style="cursor:default; height:100%; width:100%;"  >
+    <div class="editableContent" style="line-height:1.5;">
+        <p><a href="sy/index.htm" target="_self"><img src="../img.bj.wezhan.cn/content/sitefiles/2018724/images/7157198_logo.png"/></a></p>
+    </div>
+</div>
+<script>
+    Pagination('view_text_34_843_txt',"首页","尾页","上一页","下一页");
+</script>
+</div>
+</div>
+<div  id="view_navigator_38_843" class="yibuSmartViewMargin absPos"   >
+<div class='yibuFrameContent overflow_hidden navigator_Style2_Item0 view_navigator_38_843_Style2_Item0' style='height:65px;width:811px;'>    <ul id=nav_view_navigator_38_843 styleItem=Style2>
+            <li class=w_nav_item style=width:16.66%;*width:16.33%>
+                    <h3>
+                        <a href="gsxw/index.htm" target=_self>
+                            新闻
+                        </a>
+                    </h3>
+                    <ul class=w_subnav style=width:135.17px;*left:0px;>
+            <li  class=w_subnav_item>
+                    <a href="gsxw/index.htm" target=_self>
+                        公司新闻
+                    </a>
+                            </li>
+            <li  class=w_subnav_item>
+                    <a href="hyxw/index.htm" target=_self>
+                        行业新闻
+                    </a>
+                            </li>
+    </ul>
+            </li>
+            <li class=w_nav_item style=width:16.66%;*width:16.33%>
+                    <h3>
+                        <a href="xtcp/index.htm" target=_self>
+                            产品
+                        </a>
+                    </h3>
+                    <ul class=w_subnav style=width:135.17px;*left:0px;>
+            <li  class=w_subnav_item>
+                    <a href="xtcp/index.htm" target=_self>
+                        系统产品
+                    </a>
+                            </li>
+            <li  class=w_subnav_item>
+                    <a href="rjcp/index.htm" target=_self>
+                        软件产品
+                    </a>
+                            </li>
+    </ul>
+            </li>
+            <li class=w_nav_item style=width:16.66%;*width:16.33%>
+                    <h3>
+                        <a href="jjfa/index.htm" target=_self>
+                            解决方案
+                        </a>
+                    </h3>
+                    <ul class=w_subnav style=width:135.17px;*left:0px;>
+            <li  class=w_subnav_item>
+                    <a href="vrjyzhyyjjfa/index.htm" target=_self>
+                        VR教育综合应用解决方案
+                    </a>
+                            </li>
+            <li  class=w_subnav_item>
+                    <a href="vrdrxtjhxt/index.htm" target=_self>
+                        VR多人协同交互系统
+                    </a>
+                            </li>
+            <li  class=w_subnav_item>
+                    <a href="vrltsgxxxt/index.htm" target=_self>
+                        VR立体实感学习系统
+                    </a>
+                            </li>
+            <li  class=w_subnav_item>
+                    <a href="vrsxtkxt/index.htm" target=_self>
+                        VR实训头盔系统
+                    </a>
+                            </li>
+            <li  class=w_subnav_item>
+                    <a href="vrsxymxt/index.htm" target=_self>
+                        VR实训荧幕系统
+                    </a>
+                            </li>
+    </ul>
+            </li>
+            <li class=w_nav_item style=width:16.66%;*width:16.33%>
+                    <h3>
+                        <a href="xsyj/index.htm" target=_self>
+                            行业应用
+                        </a>
+                    </h3>
+                    <ul class=w_subnav style=width:135.17px;*left:0px;>
+            <li  class=w_subnav_item>
+                    <a href="xsyj/index.htm" target=_self>
+                        学术研究
+                    </a>
+                            </li>
+            <li  class=w_subnav_item>
+                    <a href="k12jy/index.htm" target=_self>
+                        K12教育
+                    </a>
+                            </li>
+            <li  class=w_subnav_item>
+                    <a href="ylbj/index.htm" target=_self>
+                        医疗保健
+                    </a>
+                            </li>
+            <li  class=w_subnav_item>
+                    <a href="px/index.htm" target=_self>
+                        培训
+                    </a>
+                            </li>
+            <li  class=w_subnav_item>
+                    <a href="zzy/index.htm" target=_self>
+                        制造业
+                    </a>
+                            </li>
+            <li  class=w_subnav_item>
+                    <a href="qthy/index.htm" target=_self>
+                        其他行业
+                    </a>
+                            </li>
+    </ul>
+            </li>
+            <li class=w_nav_item style=width:16.66%;*width:16.33%>
+                    <h3>
+                        <a href="jyyh/index.htm" target=_self>
+                            应用案例
+                        </a>
+                    </h3>
+                    <ul class=w_subnav style=width:135.17px;*left:0px;>
+            <li  class=w_subnav_item>
+                    <a href="jyyh/index.htm" target=_self>
+                        教育用户
+                    </a>
+                            </li>
+            <li  class=w_subnav_item>
+                    <a href="qtly/index.htm" target=_self>
+                        其它领域
+                    </a>
+                            </li>
+    </ul>
+            </li>
+            <li class=w_nav_item style=width:16.66%;*width:16.33%>
+                    <h3>
+                        <a href="gsjs/index.htm" target=_self>
+                            关于我们
+                        </a>
+                    </h3>
+                    <ul class=w_subnav style=width:135.17px;*left:0px;>
+            <li  class=w_subnav_item>
+                    <a href="gsjs/index.htm" target=_self>
+                        公司介绍
+                    </a>
+                            </li>
+            <li  class=w_subnav_item>
+                    <a href="lxfs/index.htm" target=_self>
+                        联系方式
+                    </a>
+                            </li>
+            <li  class=w_subnav_item>
+                    <a href="fxs/index.htm" target=_self>
+                        分销商
+                    </a>
+                            </li>
+            <li  class=w_subnav_item>
+                    <a href="hzhb/index.htm" target=_self>
+                        合作伙伴
+                    </a>
+                            </li>
+    </ul>
+            </li>
+    </ul>
+
+
+<input type="hidden" id="HeightVariablesStr_view_navigator_38_843" value="$height:65px;$Item_height:65px;$SubItem_height:65px;" />
+<script>
+    $(function () {
+        slideMenu("nav_" + 'view_navigator_38_843');
+        jQuery("#nav_" + 'view_navigator_38_843').parent("div").css("overflow", "visible");
+        var isDivider = true;
+
+        //子导航下边框显示不出来的fix
+        $("#nav_" + 'view_navigator_38_843').children("li").each(function () {
+            var Li_height = $(this).height();
+            $("li", this).height(Li_height);
+
+            var child_li = $("li", this);
+            var topborderwidth = $("a:first", child_li).css('border-top-width');
+            topborderwidth = isNaN(parseInt(topborderwidth)) ? 0 : parseInt(topborderwidth);
+            var bottomborderwidth = $("a:first", child_li).css('border-bottom-width');
+            bottomborderwidth = isNaN(parseInt(bottomborderwidth)) ? 0 : parseInt(bottomborderwidth);
+            var aheight = Li_height - topborderwidth - bottomborderwidth;
+            $("a", child_li).height(aheight);
+        });
+
+        jQuery("#nav_" + 'view_navigator_38_843').children("li").each(function () {
+            var topWidth = $(this).children("h3").children("a").css("border-top-width");
+            var leftWidth = $(this).children("h3").children("a").css("border-left-width");
+            var bottomWidth = $(this).children("h3").children("a").css("border-bottom-width");
+
+
+
+            if (topWidth != "0" && topWidth != "0px") {
+                isDivider = false;
+                return false;
+            }
+            if (leftWidth != "0" && leftWidth != "0px") {
+                isDivider = false;
+                return false;
+            }
+            if (bottomWidth != "0" && bottomWidth != "0px") {
+                isDivider = false;
+                return false;
+            }
+
+
+            if ($(this).children("ul").length > 0) {
+                var maxWidth = $(this).children("ul").width();
+                $(this).children("ul").children("li").each(function () {
+
+                    var a = $(this).children("a");
+                    var currentWidth = GetCurrentStrWidth(a.html(), a.css("font-size")) + 20;
+                    if (maxWidth < currentWidth)
+                        maxWidth = currentWidth;
+                });
+                $(this).children("ul").css("width", maxWidth + "px");
+            }
+        });
+        //if (isDivider)
+        //    jQuery("#nav_" + 'view_navigator_38_843').children("li:last").children("h3").children("a").css("border-right-width", "0px");//去掉最后一项的分隔线
+
+        if ("False" == "False") {
+            jQuery("#" + 'view_navigator_38_843').css("z-index", "999999");
+            if ($.browser.msie) {
+                jQuery("#" + 'view_navigator_38_843').parent(".runTimeflowsmartView").css("z-index", "999999");
+            }
+            if (jQuery("#" + 'view_navigator_38_843').parent().attr("class") != "runTimeflowsmartView") {//导航可能放在容器控件中了，需要把容器控件的z-index的值设大
+                jQuery("#" + 'view_navigator_38_843').parent(".w_container_content").parent().parent().css("z-index", "999998");
+            }
+        }
+        SetNavSelectedStyle("nav_" + 'view_navigator_38_843', 'nav');//选中当前导航
+    })
+</script>
+</div>
+</div>
+
+</div>
+<script type="text/javascript">
+    function setLayoutHeight() {
+        var bannerheight = $("#view_banner_33_843").css("height");
+        $("#view_banner_33_843").children(".yibuFrameContent").css("height", bannerheight);
+    };
+</script></div>
+</div>
+</div>
+      </div>
+    </div>
+    <div class="main-wrap clearfix" style="*z-index:10;*position:relative;width:100%;margin-left:auto;margin-right:auto;;background-color:">
+        <div class="main clearfix page_main" style="width:1180px;">
+        	<div class="content yibuLayout_Body" style="min-height:100px;margin-left:auto;margin-right:auto;;background-color:;background-color:" id="yibuLayout_center">
+        	    <div  id="view_main_1_1265" class="mainSamrtView yibuSmartViewMargin"   >
+<div class='yibuFrameContent main__Item0' style='height:2312px;width:100%;border-style:none;'><div class='runTimeflowsmartView'><div  id="view_text_13_1265" class="yibuSmartViewMargin absPos yibuAnimate"    yibuAnimate='{"delay":500,"duration":800,"direction":"T","effect":"custom.floatIn"}'>
+<div class='yibuFrameContent overflow_hidden text_Style1_Item0' style='height:61px;width:180px;'>
+<style type="text/css">
+    #view_text_13_1265_txt ul{ padding-left:20px;}
+</style>
+<div id='view_text_13_1265_txt'   style="cursor:default; height:100%; width:100%;"  >
+    <div class="editableContent" style="line-height:1.5;">
+        <p style="text-align: center;"><strong><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px; color: rgb(69, 69, 69);">为什么选择我们</span></strong></p><p style="text-align: center;"><strong><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px; color: rgb(69, 69, 69);"><img src="../img.bj.wezhan.cn/content/sitefiles/2018724/images/7103913_标题下.png"/></span></strong></p>
+    </div>
+</div>
+<script>
+    Pagination('view_text_13_1265_txt',"首页","尾页","上一页","下一页");
+</script>
+</div>
+</div>
+<div  id="view_text_14_1265" class="yibuSmartViewMargin absPos yibuAnimate"    yibuAnimate='{"delay":500,"duration":800,"direction":"T","effect":"custom.floatIn"}'>
+<div class='yibuFrameContent overflow_hidden text_Style1_Item0 view_text_14_1265_Style1_Item0' style='height:57px;width:650px;'>
+<style type="text/css">
+    #view_text_14_1265_txt ul{ padding-left:20px;}
+</style>
+<div id='view_text_14_1265_txt'   style="cursor:default; height:100%; width:100%;"  >
+    <div class="editableContent" style="line-height:1.5;">
+        <p style="text-align: center; line-height: 2em;"><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 14px; color: rgb(127, 127, 127);">核心团队10年以上高端仿真行业经验，专注于仿真系统软硬件开发业与集成，人机交互设计解决方案</span></p><p style="text-align: center; line-height: 2em;"><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 14px; color: rgb(127, 127, 127);">三维数据可视化解决方案，多媒体视觉环境展示，基于VR设备的软件关键技术研发</span></p><p><br/></p>
+    </div>
+</div>
+<script>
+    Pagination('view_text_14_1265_txt',"首页","尾页","上一页","下一页");
+</script>
+</div>
+</div>
+<div  id="view_text_15_1265" class="yibuSmartViewMargin absPos yibuAnimate"    yibuAnimate='{"delay":500,"duration":800,"direction":"B","effect":"custom.floatIn"}'>
+<div class='yibuFrameContent overflow_hidden text_Style1_Item0' style='height:195px;width:280px;'>
+<style type="text/css">
+    #view_text_15_1265_txt ul{ padding-left:20px;}
+</style>
+<div id='view_text_15_1265_txt'   style="cursor:default; height:100%; width:100%;"  >
+    <div class="editableContent" style="line-height:1.5;">
+        <p style="text-align: center;"><img src="../img.bj.wezhan.cn/content/sitefiles/2018724/images/7103925_tubiao1.png"/></p><p style="line-height: 2em; text-align: center;"><span style="font-size: 14px;"><strong><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">独特的创意</span></strong></span></p><p style="line-height: 2em;"><span style="font-size: 14px;"><strong><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;"><br/></span></strong></span></p><p style="line-height: 2em; text-align: center;"><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">核心团队10年以上高端仿真行业经验，专注于仿</span></p><p style="line-height: 2em; text-align: center;"><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">真系统软硬件开发业与集成</span></p><p><br/></p>
+    </div>
+</div>
+<script>
+    Pagination('view_text_15_1265_txt',"首页","尾页","上一页","下一页");
+</script>
+</div>
+</div>
+<div  id="view_text_16_1265" class="yibuSmartViewMargin absPos yibuAnimate"    yibuAnimate='{"delay":500,"duration":800,"direction":"B","effect":"custom.floatIn"}'>
+<div class='yibuFrameContent overflow_hidden text_Style1_Item0 view_text_16_1265_Style1_Item0' style='height:195px;width:280px;'>
+<style type="text/css">
+    #view_text_16_1265_txt ul{ padding-left:20px;}
+</style>
+<div id='view_text_16_1265_txt'   style="cursor:default; height:100%; width:100%;"  >
+    <div class="editableContent" style="line-height:1.5;">
+        <p style="text-align: center;"><img src="../img.bj.wezhan.cn/content/sitefiles/2018724/images/7103926_tubiao2.png"/></p><p style="line-height: 2em; text-align: center;"><font face="微软雅黑, Microsoft YaHei"><span style="font-size: 14px;"><b>定制化服务</b></span></font></p><p style="line-height: 2em;"><span style="font-size: 14px;"><strong><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;"><br/></span></strong></span></p><p style="line-height: 2em; text-align: center;"><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">核心团队10年以上高端仿真行业经验，专注于仿</span></p><p style="line-height: 2em; text-align: center;"><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">真系统软硬件开发业与集成</span></p><p><br/></p>
+    </div>
+</div>
+<script>
+    Pagination('view_text_16_1265_txt',"首页","尾页","上一页","下一页");
+</script>
+</div>
+</div>
+<div  id="view_text_17_1265" class="yibuSmartViewMargin absPos yibuAnimate"    yibuAnimate='{"delay":500,"duration":800,"direction":"B","effect":"custom.floatIn"}'>
+<div class='yibuFrameContent overflow_hidden text_Style1_Item0 view_text_17_1265_Style1_Item0' style='height:195px;width:280px;'>
+<style type="text/css">
+    #view_text_17_1265_txt ul{ padding-left:20px;}
+</style>
+<div id='view_text_17_1265_txt'   style="cursor:default; height:100%; width:100%;"  >
+    <div class="editableContent" style="line-height:1.5;">
+        <p style="text-align: center;"><img src="../img.bj.wezhan.cn/content/sitefiles/2018724/images/7103927_tubiao3.png"/></p><p style="line-height: 2em; text-align: center;"><span style="font-size: 14px;"><strong><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">完善的体系</span></strong></span></p><p style="line-height: 2em;"><span style="font-size: 14px;"><strong><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;"><br/></span></strong></span></p><p style="line-height: 2em; text-align: center;"><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">核心团队10年以上高端仿真行业经验，专注于仿</span></p><p style="line-height: 2em; text-align: center;"><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">真系统软硬件开发业与集成</span></p><p><br/></p>
+    </div>
+</div>
+<script>
+    Pagination('view_text_17_1265_txt',"首页","尾页","上一页","下一页");
+</script>
+</div>
+</div>
+<div  id="view_text_18_1265" class="yibuSmartViewMargin absPos yibuAnimate"    yibuAnimate='{"delay":500,"duration":800,"direction":"B","effect":"custom.floatIn"}'>
+<div class='yibuFrameContent overflow_hidden text_Style1_Item0 view_text_18_1265_Style1_Item0' style='height:195px;width:280px;'>
+<style type="text/css">
+    #view_text_18_1265_txt ul{ padding-left:20px;}
+</style>
+<div id='view_text_18_1265_txt'   style="cursor:default; height:100%; width:100%;"  >
+    <div class="editableContent" style="line-height:1.5;">
+        <p style="text-align: center;"><img src="../img.bj.wezhan.cn/content/sitefiles/2018724/images/7103928_tubiao4.png"/></p><p style="line-height: 2em; text-align: center;"><span style="font-size: 14px;"><strong><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">优秀的团队</span></strong></span></p><p style="line-height: 2em;"><span style="font-size: 14px;"><strong><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;"><br/></span></strong></span></p><p style="line-height: 2em; text-align: center;"><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">核心团队10年以上高端仿真行业经验，专注于仿</span></p><p style="line-height: 2em; text-align: center;"><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">真系统软硬件开发业与集成</span></p><p><br/></p>
+    </div>
+</div>
+<script>
+    Pagination('view_text_18_1265_txt',"首页","尾页","上一页","下一页");
+</script>
+</div>
+</div>
+<div  id="view_linkbutton_19_1265" class="yibuSmartViewMargin absPos yibuAnimate"    yibuAnimate='{"delay":500,"duration":800,"direction":"B","effect":"custom.floatIn"}'>
+<div class='yibuFrameContent overflow_hidden linkbutton_Style1_Item0 view_linkbutton_19_1265_Style1_Item0' style='height:43px;width:320px;'>
+<a target="_self"   href="gsjs/index.htm"    class="w_button_wrap" style="width: 318px ; height: 41px ; line-height: 41px ;">
+    <span class="w_button_position">
+<span class="w_button_text editableContent">了解更多</span>
+    </span>
+</a>
+<script>
+    $(function () {
+        $smartview = $("#view_linkbutton_19_1265");
+        var borderWidth = $smartview.find("div").first().outerWidth(true) - $smartview.find("div").width();
+        var borderHeight = $smartview.find("div").first().outerHeight(true) - $smartview.find("div").height();
+        var centerWidth = $smartview.width() - borderWidth;
+        var centerHeight = $smartview.height() - borderHeight;
+        $smartview.find("div").first().width(centerWidth).height(centerHeight);
+        $smartview.find("div a").width(centerWidth).height(centerHeight).css('line-height', centerHeight + "px");
+    });
+</script></div>
+</div>
+<div  id="view_banner_20_1265" class="yibuSmartViewMargin absPos"   >
+<div class='yibuFrameContent overflow_hidden banner_Style1_Item0 view_banner_20_1265_Style1_Item0' style='height:348px;width:1180px;'>    <div id="fullScreen_view_banner_20_1265" class="w_container_wrap renderfullScreen" ></div>
+    <script>
+    $(function () {
+        setRenderFullScreen($('#view_banner_20_1265'));
+
+    });
+</script>
+
+
+<div class="flowsmartView isflowcontainer w_container_content" refarea="Area_0" id="flowsmartView_20" style=width:1180px;>
+    <div  id="view_text_23_1265" class="yibuSmartViewMargin absPos yibuAnimate"    yibuAnimate='{"delay":500,"duration":800,"direction":"T","effect":"custom.floatIn"}'>
+<div class='yibuFrameContent overflow_hidden text_Style1_Item0' style='height:61px;width:180px;'>
+<style type="text/css">
+    #view_text_23_1265_txt ul{ padding-left:20px;}
+</style>
+<div id='view_text_23_1265_txt'   style="cursor:default; height:100%; width:100%;"  >
+    <div class="editableContent" style="line-height:1.5;">
+        <p style="text-align: center;"><span style="color: rgb(255, 255, 255);"><strong><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;">解决方案</span></strong><strong><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px;"></span></strong></span></p><p style="text-align: center;"><span style="color: rgb(255, 255, 255);"><strong><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px; color: rgb(69, 69, 69);"><img src="../img.bj.wezhan.cn/content/sitefiles/2018724/images/7103914_标题下baise.png"/></span></strong></span></p>
+    </div>
+</div>
+<script>
+    Pagination('view_text_23_1265_txt',"首页","尾页","上一页","下一页");
+</script>
+</div>
+</div>
+<div  id="view_text_24_1265" class="yibuSmartViewMargin absPos yibuAnimate"    yibuAnimate='{"delay":500,"duration":800,"direction":"T","effect":"custom.floatIn"}'>
+<div class='yibuFrameContent overflow_hidden text_Style1_Item0 view_text_24_1265_Style1_Item0' style='height:57px;width:650px;'>
+<style type="text/css">
+    #view_text_24_1265_txt ul{ padding-left:20px;}
+</style>
+<div id='view_text_24_1265_txt'   style="cursor:default; height:100%; width:100%;"  >
+    <div class="editableContent" style="line-height:1.5;">
+        <p style="text-align: center; line-height: 2em;"><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 14px; color: rgb(255, 255, 255);">核心团队10年以上高端仿真行业经验，专注于仿真系统软硬件开发业与集成，人机交互设计解决方案</span></p><p style="text-align: center; line-height: 2em;"><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 14px; color: rgb(255, 255, 255);">三维数据可视化解决方案，多媒体视觉环境展示，基于VR设备的软件关键技术研发</span></p><p><br/></p>
+    </div>
+</div>
+<script>
+    Pagination('view_text_24_1265_txt',"首页","尾页","上一页","下一页");
+</script>
+</div>
+</div>
+<div  id="view_linkbutton_42_1265" class="yibuSmartViewMargin absPos"   >
+<div class='yibuFrameContent overflow_hidden linkbutton_Style1_Item0 view_linkbutton_42_1265_Style1_Item0' style='height:267px;width:225px;'>
+<a target="_self"   href="vrjyzhyyjjfa/index.htm"    class="w_button_wrap" style="width: 223px ; height: 265px ; line-height: 265px ;">
+    <span class="w_button_position">
+<span class="w_button_text editableContent"></span>
+    </span>
+</a>
+<script>
+    $(function () {
+        $smartview = $("#view_linkbutton_42_1265");
+        var borderWidth = $smartview.find("div").first().outerWidth(true) - $smartview.find("div").width();
+        var borderHeight = $smartview.find("div").first().outerHeight(true) - $smartview.find("div").height();
+        var centerWidth = $smartview.width() - borderWidth;
+        var centerHeight = $smartview.height() - borderHeight;
+        $smartview.find("div").first().width(centerWidth).height(centerHeight);
+        $smartview.find("div a").width(centerWidth).height(centerHeight).css('line-height', centerHeight + "px");
+    });
+</script></div>
+</div>
+<div  id="view_linkbutton_43_1265" class="yibuSmartViewMargin absPos"   >
+<div class='yibuFrameContent overflow_hidden linkbutton_Style1_Item0 view_linkbutton_43_1265_Style1_Item0' style='height:267px;width:225px;'>
+<a target="_self"   href="vrdrxtjhxt/index.htm"    class="w_button_wrap" style="width: 223px ; height: 265px ; line-height: 265px ;">
+    <span class="w_button_position">
+<span class="w_button_text editableContent"></span>
+    </span>
+</a>
+<script>
+    $(function () {
+        $smartview = $("#view_linkbutton_43_1265");
+        var borderWidth = $smartview.find("div").first().outerWidth(true) - $smartview.find("div").width();
+        var borderHeight = $smartview.find("div").first().outerHeight(true) - $smartview.find("div").height();
+        var centerWidth = $smartview.width() - borderWidth;
+        var centerHeight = $smartview.height() - borderHeight;
+        $smartview.find("div").first().width(centerWidth).height(centerHeight);
+        $smartview.find("div a").width(centerWidth).height(centerHeight).css('line-height', centerHeight + "px");
+    });
+</script></div>
+</div>
+<div  id="view_linkbutton_44_1265" class="yibuSmartViewMargin absPos"   >
+<div class='yibuFrameContent overflow_hidden linkbutton_Style1_Item0 view_linkbutton_44_1265_Style1_Item0' style='height:267px;width:225px;'>
+<a target="_self"   href="vrltsgxxxt/index.htm"    class="w_button_wrap" style="width: 223px ; height: 265px ; line-height: 265px ;">
+    <span class="w_button_position">
+<span class="w_button_text editableContent"></span>
+    </span>
+</a>
+<script>
+    $(function () {
+        $smartview = $("#view_linkbutton_44_1265");
+        var borderWidth = $smartview.find("div").first().outerWidth(true) - $smartview.find("div").width();
+        var borderHeight = $smartview.find("div").first().outerHeight(true) - $smartview.find("div").height();
+        var centerWidth = $smartview.width() - borderWidth;
+        var centerHeight = $smartview.height() - borderHeight;
+        $smartview.find("div").first().width(centerWidth).height(centerHeight);
+        $smartview.find("div a").width(centerWidth).height(centerHeight).css('line-height', centerHeight + "px");
+    });
+</script></div>
+</div>
+<div  id="view_linkbutton_45_1265" class="yibuSmartViewMargin absPos"   >
+<div class='yibuFrameContent overflow_hidden linkbutton_Style1_Item0 view_linkbutton_45_1265_Style1_Item0' style='height:267px;width:225px;'>
+<a target="_self"   href="vrsxtkxt/index.htm"    class="w_button_wrap" style="width: 223px ; height: 265px ; line-height: 265px ;">
+    <span class="w_button_position">
+<span class="w_button_text editableContent"></span>
+    </span>
+</a>
+<script>
+    $(function () {
+        $smartview = $("#view_linkbutton_45_1265");
+        var borderWidth = $smartview.find("div").first().outerWidth(true) - $smartview.find("div").width();
+        var borderHeight = $smartview.find("div").first().outerHeight(true) - $smartview.find("div").height();
+        var centerWidth = $smartview.width() - borderWidth;
+        var centerHeight = $smartview.height() - borderHeight;
+        $smartview.find("div").first().width(centerWidth).height(centerHeight);
+        $smartview.find("div a").width(centerWidth).height(centerHeight).css('line-height', centerHeight + "px");
+    });
+</script></div>
+</div>
+<div  id="view_linkbutton_46_1265" class="yibuSmartViewMargin absPos"   >
+<div class='yibuFrameContent overflow_hidden linkbutton_Style1_Item0 view_linkbutton_46_1265_Style1_Item0' style='height:267px;width:225px;'>
+<a target="_self"   href="vrsxymxt/index.htm"    class="w_button_wrap" style="width: 223px ; height: 265px ; line-height: 265px ;">
+    <span class="w_button_position">
+<span class="w_button_text editableContent"></span>
+    </span>
+</a>
+<script>
+    $(function () {
+        $smartview = $("#view_linkbutton_46_1265");
+        var borderWidth = $smartview.find("div").first().outerWidth(true) - $smartview.find("div").width();
+        var borderHeight = $smartview.find("div").first().outerHeight(true) - $smartview.find("div").height();
+        var centerWidth = $smartview.width() - borderWidth;
+        var centerHeight = $smartview.height() - borderHeight;
+        $smartview.find("div").first().width(centerWidth).height(centerHeight);
+        $smartview.find("div a").width(centerWidth).height(centerHeight).css('line-height', centerHeight + "px");
+    });
+</script></div>
+</div>
+
+</div>
+<script type="text/javascript">
+    function setLayoutHeight() {
+        var bannerheight = $("#view_banner_20_1265").css("height");
+        $("#view_banner_20_1265").children(".yibuFrameContent").css("height", bannerheight);
+    };
+</script></div>
+</div>
+<div  id="view_linkbutton_25_1265" class="yibuSmartViewMargin absPos yibuAnimate"    yibuAnimate='{"delay":500,"duration":800,"direction":"B","effect":"custom.floatIn"}'>
+<div class='yibuFrameContent overflow_hidden linkbutton_Style1_Item0 view_linkbutton_25_1265_Style1_Item0' style='height:43px;width:320px;'>
+<a target="_self"   href="jjfa/index.htm"    class="w_button_wrap" style="width: 318px ; height: 41px ; line-height: 41px ;">
+    <span class="w_button_position">
+<span class="w_button_text editableContent">了解更多</span>
+    </span>
+</a>
+<script>
+    $(function () {
+        $smartview = $("#view_linkbutton_25_1265");
+        var borderWidth = $smartview.find("div").first().outerWidth(true) - $smartview.find("div").width();
+        var borderHeight = $smartview.find("div").first().outerHeight(true) - $smartview.find("div").height();
+        var centerWidth = $smartview.width() - borderWidth;
+        var centerHeight = $smartview.height() - borderHeight;
+        $smartview.find("div").first().width(centerWidth).height(centerHeight);
+        $smartview.find("div a").width(centerWidth).height(centerHeight).css('line-height', centerHeight + "px");
+    });
+</script></div>
+</div>
+<div  id="view_banner_26_1265" class="yibuSmartViewMargin absPos"   >
+<div class='yibuFrameContent overflow_hidden banner_Style1_Item0 view_banner_26_1265_Style1_Item0' style='height:571px;width:1180px;'>    <div id="fullScreen_view_banner_26_1265" class="w_container_wrap renderfullScreen" ></div>
+    <script>
+    $(function () {
+        setRenderFullScreen($('#view_banner_26_1265'));
+
+    });
+</script>
+
+
+<div class="flowsmartView isflowcontainer w_container_content" refarea="Area_0" id="flowsmartView_26" style=width:1180px;>
+    <div  id="view_text_27_1265" class="yibuSmartViewMargin absPos"   >
+<div class='yibuFrameContent overflow_hidden text_Style1_Item0' style='height:61px;width:180px;'>
+<style type="text/css">
+    #view_text_27_1265_txt ul{ padding-left:20px;}
+</style>
+<div id='view_text_27_1265_txt'   style="cursor:default; height:100%; width:100%;"  >
+    <div class="editableContent" style="line-height:1.5;">
+        <p style="text-align: center;"><strong><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px; color: rgb(69, 69, 69);">应用案例</span></strong></p><p style="text-align: center;"><strong><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px; color: rgb(69, 69, 69);"><img src="../img.bj.wezhan.cn/content/sitefiles/2018724/images/7103913_标题下.png"/></span></strong></p>
+    </div>
+</div>
+<script>
+    Pagination('view_text_27_1265_txt',"首页","尾页","上一页","下一页");
+</script>
+</div>
+</div>
+<div  id="view_list_28_1265" class="yibuSmartViewMargin absPos"   >
+<div class='yibuFrameContent overflow_hidden list_Style18_Item0 view_list_28_1265_Style18_Item0' style='height:271px;width:1294px;'>
+    <input type="hidden" id="list_StyleItem_view_list_28_1265" value="Style18">
+    <div class="w-list" id="view_list_28_1265_listdiv">
+        <a class="prev"></a>
+        <div class="w-list-box" id="view_list_28_1265_style18_w_list_box">
+            <ul id="view_list_28_1265_listul">
+                    <li style="width: 290px">
+                        <div class="w-pic">
+                            <a href="newsitem/277455627/index.htm" target="_blank">
+                                <img alt="12345" src="/content/sitefiles/88743/images/7103992_首页xiugai_07.png" />
+                            </a>
+                        </div>
+                        <a href="newsitem/277455627/index.htm" class="w-title" target="_blank">
+12345                        </a>
+
+                    </li>
+                    <li style="width: 290px">
+                        <div class="w-pic">
+                            <a href="newsitem/277455626/index.htm" target="_blank">
+                                <img alt="1234" src="/content/sitefiles/88743/images/7103993_首页xiugai_09.png" />
+                            </a>
+                        </div>
+                        <a href="newsitem/277455626/index.htm" class="w-title" target="_blank">
+1234                        </a>
+
+                    </li>
+                    <li style="width: 290px">
+                        <div class="w-pic">
+                            <a href="newsitem/277455625/index.htm" target="_blank">
+                                <img alt="测试测试" src="/content/sitefiles/88743/images/7103990_首页xiugai_03.png" />
+                            </a>
+                        </div>
+                        <a href="newsitem/277455625/index.htm" class="w-title" target="_blank">
+测试测试                        </a>
+
+                    </li>
+                    <li style="width: 290px">
+                        <div class="w-pic">
+                            <a href="newsitem/277455621/index.htm" target="_blank">
+                                <img alt="123" src="/content/sitefiles/88743/images/7103991_首页xiugai_05.png" />
+                            </a>
+                        </div>
+                        <a href="newsitem/277455621/index.htm" class="w-title" target="_blank">
+123                        </a>
+
+                    </li>
+                    <li style="width: 290px">
+                        <div class="w-pic">
+                            <a href="newsitem/277454473/index.htm" target="_blank">
+                                <img alt="应用案例测试" src="/content/sitefiles/88743/images/7103992_首页xiugai_07.png" />
+                            </a>
+                        </div>
+                        <a href="newsitem/277454473/index.htm" class="w-title" target="_blank">
+应用案例测试                        </a>
+
+                    </li>
+            </ul>
+        </div>
+        <a class="next"></a>
+    </div>
+    <input type="hidden" id="view_list_28_1265_listboxwidth" value="1224" />
+
+<script type="text/javascript">
+    //防止分页报错
+    var list_28 = null;
+    var visCount=4;
+    $(document).ready(function () {
+        var itemCount=5;
+        if(itemCount>0){
+            jQuery("#view_list_28_1265_listdiv").slide({ mainCell: ".w-list-box ul",scroll:1, autoPlay: true, effect: "leftLoop",easing:"swing", vis:4,interTime: 2000, pnLoop: true,opp:false, trigger: "click",autoPage:true });
+
+            resetSize({htmlId:"view_list_28_1265"},"1224");
+        }
+
+    });
+
+    function resetSize(smartview,listboxWidth)
+    {
+        $("#"+smartview.htmlId+"_style18_w_list_box").width(listboxWidth+"px");
+        $("#"+smartview.htmlId+"_style18_w_list_box").children(".tempWrap").width(listboxWidth+"px");
+    }
+</script>
+</div>
+</div>
+<div  id="view_linkbutton_29_1265" class="yibuSmartViewMargin absPos yibuAnimate"    yibuAnimate='{"delay":500,"duration":800,"direction":"B","effect":"custom.floatIn"}'>
+<div class='yibuFrameContent overflow_hidden linkbutton_Style1_Item0 view_linkbutton_29_1265_Style1_Item0' style='height:43px;width:320px;'>
+<a target="_self"   href="jyyh/index.htm"    class="w_button_wrap" style="width: 318px ; height: 41px ; line-height: 41px ;">
+    <span class="w_button_position">
+<span class="w_button_text editableContent">了解更多</span>
+    </span>
+</a>
+<script>
+    $(function () {
+        $smartview = $("#view_linkbutton_29_1265");
+        var borderWidth = $smartview.find("div").first().outerWidth(true) - $smartview.find("div").width();
+        var borderHeight = $smartview.find("div").first().outerHeight(true) - $smartview.find("div").height();
+        var centerWidth = $smartview.width() - borderWidth;
+        var centerHeight = $smartview.height() - borderHeight;
+        $smartview.find("div").first().width(centerWidth).height(centerHeight);
+        $smartview.find("div a").width(centerWidth).height(centerHeight).css('line-height', centerHeight + "px");
+    });
+</script></div>
+</div>
+<div  id="view_text_31_1265" class="yibuSmartViewMargin absPos yibuAnimate"    yibuAnimate='{"delay":500,"duration":800,"direction":"T","effect":"custom.floatIn"}'>
+<div class='yibuFrameContent overflow_hidden text_Style1_Item0 view_text_31_1265_Style1_Item0' style='height:61px;width:180px;'>
+<style type="text/css">
+    #view_text_31_1265_txt ul{ padding-left:20px;}
+</style>
+<div id='view_text_31_1265_txt'   style="cursor:default; height:100%; width:100%;"  >
+    <div class="editableContent" style="line-height:1.5;">
+        <p style="text-align: center;"><strong><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px; color: rgb(69, 69, 69);">联系我们</span></strong></p><p style="text-align: center;"><strong><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; font-size: 16px; color: rgb(69, 69, 69);"><img src="../img.bj.wezhan.cn/content/sitefiles/2018724/images/7103913_标题下.png"/></span></strong></p>
+    </div>
+</div>
+<script>
+    Pagination('view_text_31_1265_txt',"首页","尾页","上一页","下一页");
+</script>
+</div>
+</div>
+<div  id="view_code_67_1265" class="yibuSmartViewMargin absPos"   >
+<div class='yibuFrameContent overflow_hidden code_Style1_Item0' style='height:42px;width:126px;'>
+        <div id='view_code_67_1265_code' >
+            <style>
+#fullScreen_view_banner_20_1265{min-width:1400px;width:100%;}
+</style>
+
+<style>
+#fullScreen_view_banner_26_1265{min-width:1400px;width:100%;}
+</style>
+        </div>
+</div>
+</div>
+
+</div>
+<script type="text/javascript">
+    function setLayoutHeight() {
+        var bannerheight = $("#view_banner_26_1265").css("height");
+        $("#view_banner_26_1265").children(".yibuFrameContent").css("height", bannerheight);
+    };
+</script></div>
+</div>
+<div  id="view_text_32_1265" class="yibuSmartViewMargin absPos yibuAnimate"    yibuAnimate='{"delay":500,"duration":800,"direction":"T","effect":"custom.floatIn"}'>
+<div class='yibuFrameContent overflow_hidden text_Style1_Item0 view_text_32_1265_Style1_Item0' style='height:42px;width:42px;'>
+<style type="text/css">
+    #view_text_32_1265_txt ul{ padding-left:20px;}
+</style>
+<div id='view_text_32_1265_txt'   style="cursor:default; height:100%; width:100%;"  >
+    <div class="editableContent" style="line-height:1.5;">
+        <p><img src="../img.bj.wezhan.cn/content/sitefiles/2018724/images/7103929_电话.png"/></p>
+    </div>
+</div>
+<script>
+    Pagination('view_text_32_1265_txt',"首页","尾页","上一页","下一页");
+</script>
+</div>
+</div>
+<div  id="view_text_33_1265" class="yibuSmartViewMargin absPos yibuAnimate"    yibuAnimate='{"delay":500,"duration":800,"direction":"B","effect":"custom.floatIn"}'>
+<div class='yibuFrameContent overflow_hidden text_Style1_Item0 view_text_33_1265_Style1_Item0' style='height:76px;width:211px;'>
+<style type="text/css">
+    #view_text_33_1265_txt ul{ padding-left:20px;}
+</style>
+<div id='view_text_33_1265_txt'   style="cursor:default; height:100%; width:100%;"  >
+    <div class="editableContent" style="line-height:1.5;">
+        <p style="line-height: 2em;">联系电话：</p><p style="line-height: 2em;">400-9008-917</p><p style="line-height: 2em;">010-82737190</p>
+    </div>
+</div>
+<script>
+    Pagination('view_text_33_1265_txt',"首页","尾页","上一页","下一页");
+</script>
+</div>
+</div>
+<div  id="view_text_34_1265" class="yibuSmartViewMargin absPos yibuAnimate"    yibuAnimate='{"delay":500,"duration":800,"direction":"T","effect":"custom.floatIn"}'>
+<div class='yibuFrameContent overflow_hidden text_Style1_Item0 view_text_34_1265_Style1_Item0' style='height:42px;width:42px;'>
+<style type="text/css">
+    #view_text_34_1265_txt ul{ padding-left:20px;}
+</style>
+<div id='view_text_34_1265_txt'   style="cursor:default; height:100%; width:100%;"  >
+    <div class="editableContent" style="line-height:1.5;">
+        <p><img src="../img.bj.wezhan.cn/content/sitefiles/2018724/images/7103930_定位.png"/></p>
+    </div>
+</div>
+<script>
+    Pagination('view_text_34_1265_txt',"首页","尾页","上一页","下一页");
+</script>
+</div>
+</div>
+<div  id="view_text_35_1265" class="yibuSmartViewMargin absPos yibuAnimate"    yibuAnimate='{"delay":500,"duration":800,"direction":"B","effect":"custom.floatIn"}'>
+<div class='yibuFrameContent overflow_hidden text_Style1_Item0 view_text_35_1265_Style1_Item0' style='height:67px;width:267px;'>
+<style type="text/css">
+    #view_text_35_1265_txt ul{ padding-left:20px;}
+</style>
+<div id='view_text_35_1265_txt'   style="cursor:default; height:100%; width:100%;"  >
+    <div class="editableContent" style="line-height:1.5;">
+        <p style="line-height: 2em;">通讯地址：</p><p style="line-height: 2em;"><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;;">北京市昌平区龙域北街3号金域国际中心A座1106</span></p>
+    </div>
+</div>
+<script>
+    Pagination('view_text_35_1265_txt',"首页","尾页","上一页","下一页");
+</script>
+</div>
+</div>
+<div  id="view_text_36_1265" class="yibuSmartViewMargin absPos yibuAnimate"    yibuAnimate='{"delay":500,"duration":800,"direction":"T","effect":"custom.floatIn"}'>
+<div class='yibuFrameContent overflow_hidden text_Style1_Item0 view_text_36_1265_Style1_Item0' style='height:42px;width:42px;'>
+<style type="text/css">
+    #view_text_36_1265_txt ul{ padding-left:20px;}
+</style>
+<div id='view_text_36_1265_txt'   style="cursor:default; height:100%; width:100%;"  >
+    <div class="editableContent" style="line-height:1.5;">
+        <p><img src="../img.bj.wezhan.cn/content/sitefiles/2018724/images/7103931_邮箱.png"/></p>
+    </div>
+</div>
+<script>
+    Pagination('view_text_36_1265_txt',"首页","尾页","上一页","下一页");
+</script>
+</div>
+</div>
+<div  id="view_text_37_1265" class="yibuSmartViewMargin absPos yibuAnimate"    yibuAnimate='{"delay":500,"duration":800,"direction":"B","effect":"custom.floatIn"}'>
+<div class='yibuFrameContent overflow_hidden text_Style1_Item0 view_text_37_1265_Style1_Item0' style='height:48px;width:240px;'>
+<style type="text/css">
+    #view_text_37_1265_txt ul{ padding-left:20px;}
+</style>
+<div id='view_text_37_1265_txt'   style="cursor:default; height:100%; width:100%;"  >
+    <div class="editableContent" style="line-height:1.5;">
+        <p style="line-height: 2em;"><font face="arial, helvetica, sans-serif">邮箱：</font></p><p style="line-height: 2em;"><span style="font-family: arial, helvetica, sans-serif;">info@zanvr.com</span></p>
+    </div>
+</div>
+<script>
+    Pagination('view_text_37_1265_txt',"首页","尾页","上一页","下一页");
+</script>
+</div>
+</div>
+<div  id="view_qqservice_47_1265" class="yibuSmartViewMargin absPos yibulocked"   >
+<div class='yibuFrameContent overflow_hidden qqservice_Style2_Item0 view_qqservice_47_1265_Style2_Item3' style='height:100px;width:229px;'><link rel="stylesheet" href="/Plugins/Designer/Content/css/font-awesome.min.css" />
+<div class="w-cs" id="fixedBox_view_qqservice_47_1265">
+    <ul class="w-cs-but">
+        <li class="w-cs-phoneBut" style="visibility: hidden;height:0; ">
+            <a href="javascript:void(0)"><i class="fa fa-phone"></i></a>
+            <ul class="w-cs-mod w-cs-phone" id="qqphone">
+                <li>客服电话</li>
+                    <li>4008564566</li>
+            </ul>
+        </li>
+
+        <li class="w-cs-qqBut" style="visibility: hidden;height:0; ">
+            <a href="javascript:void(0)"><i class="fa fa-qq"></i></a>
+            <ul class="w-cs-mod w-cs-qq"  id="qqlist">
+                <li><a href="../wpa.qq.com/msgrd_F2F652C7" target="_blank"><i class="fa fa-qq"></i> QQ客服</a></li>
+            </ul>
+        </li>
+
+        <li class="w-cs-clockBut" style="visibility: hidden;height:0; ">
+            <a href="javascript:void(0)"><i class="fa fa-clock-o"></i></a>
+            <ul class="w-cs-mod w-cs-clock" id="qqservicetime">
+                <li>服务时间</li>
+                <li>周一至周五 9:00-21:00</li>
+            </ul>
+        </li>
+
+        <li class="w-cs-upBut" style="visibility: visible"><a href="javascript:void(0)" onclick="gotoTop();return false;"><i class="fa fa-arrow-up"></i></a></li>
+
+    </ul>
+</div>
+<script type="text/javascript" src="/Plugins/Designer/Script/jquery.fixed.js"></script>
+<script type="text/javascript">
+    $(function () {
+
+
+        loadWidth();
+        $("#view_qqservice_47_1265 .w-cs-phoneBut").hover(function () {
+
+                $("#view_qqservice_47_1265 .w-cs-phone").stop().animate({ right: '62px'}, 200);
+        }, function () {
+            $("#view_qqservice_47_1265 .w-cs-phone").stop().animate({ right: '0' }, 200);
+            });
+
+        $("#view_qqservice_47_1265 .w-cs-qqBut").hover(function () {
+
+                $("#view_qqservice_47_1265 .w-cs-qq").stop().animate({ right: '62px' }, 200);
+            },function () {
+                $("#view_qqservice_47_1265 .w-cs-qq").stop().animate({ right: '0'}, 200);
+            });
+
+        $("#view_qqservice_47_1265 .w-cs-clockBut").hover(function () {
+                $("#view_qqservice_47_1265 .w-cs-clock").stop().animate({ right: '62px'}, 200);
+            },function () {
+                $("#view_qqservice_47_1265 .w-cs-clock").stop().animate({ right: '0'}, 200);
+            });
+
+    });
+    function loadWidth()
+    {
+        var phonewidth = $("#view_qqservice_47_1265 .w-cs-phone")[0].scrollWidth;
+        var qqwidth = $("#view_qqservice_47_1265 .w-cs-qq")[0].scrollWidth;
+        var timewidth = $("#view_qqservice_47_1265 .w-cs-clock")[0].scrollWidth;
+        var numbers = [phonewidth, qqwidth, timewidth];
+        var maxInNumbers = Math.max.apply(Math, numbers);
+        $("#view_qqservice_47_1265 .w-cs-mod").css("width", maxInNumbers + "px");
+    }
+    function gotoTop(acceleration, stime) {
+        acceleration = acceleration || 0.1;
+        stime = stime || 10;
+        var x1 = 0;
+        var y1 = 0;
+        var x2 = 0;
+        var y2 = 0;
+        var x3 = 0;
+        var y3 = 0;
+        if (document.documentElement) {
+            x1 = document.documentElement.scrollLeft || 0;
+            y1 = document.documentElement.scrollTop || 0;
+        }
+        if (document.body) {
+            x2 = document.body.scrollLeft || 0;
+            y2 = document.body.scrollTop || 0;
+        }
+        var x3 = window.scrollX || 0;
+        var y3 = window.scrollY || 0;
+
+        // 滚动条到页面顶部的水平距离
+        var x = Math.max(x1, Math.max(x2, x3));
+        // 滚动条到页面顶部的垂直距离
+        var y = Math.max(y1, Math.max(y2, y3));
+
+        // 滚动距离 = 目前距离 / 速度, 因为距离原来越小, 速度是大于 1 的数, 所以滚动距离会越来越小
+        var speeding = 1 + acceleration;
+        window.scrollTo(Math.floor(x / speeding), Math.floor(y / speeding));
+
+        // 如果距离不为零, 继续调用函数
+        if (x > 0 || y > 0) {
+            var run = "gotoTop(" + acceleration + ", " + stime + ")";
+            window.setTimeout(run, stime);
+        }
+    }
+</script>
+
+</div>
+</div>
+</div></div>
+</div>
+
+        	</div>
+        </div>
+    </div>
+    <div style="width:100%;height:53px;background-color:#333333;margin:0 auto;">
+      <div class="footer page_footer yibuLayout_tempPanel" style="width:1180px;height:53px;background-color:#333333;;">
+           <div class='runTimeflowsmartView'><div  id="view_text_36_843" class="yibuSmartViewMargin absPos"   >
+<div class='yibuFrameContent overflow_hidden text_Style1_Item0 view_text_36_843_Style1_Item0' style='height:26px;width:1180px;'>
+<style type="text/css">
+    #view_text_36_843_txt ul{ padding-left:20px;}
+</style>
+<div id='view_text_36_843_txt'   style="cursor:default; height:100%; width:100%;"  >
+    <div class="editableContent" style="line-height:1.5;">
+        <p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; text-decoration: none; color: rgb(255, 255, 255);">北京知感科技有限公司版权所有&nbsp;</span></p>
+    </div>
+</div>
+<script>
+    Pagination('view_text_36_843_txt',"首页","尾页","上一页","下一页");
+</script>
+</div>
+</div>
+<div  id="view_code_51_843" class="yibuSmartViewMargin absPos"   >
+<div class='yibuFrameContent overflow_hidden code_Style1_Item0' style='height:27px;width:100px;'>
+        <div id='view_code_51_843_code' >
+            <style>
+#w_slider_2 renderfullScreen w_slider_2_32
+{min-width:1220px;width:100%;}
+</style>
+        </div>
+</div>
+</div>
+<div  id="view_code_52_843" class="yibuSmartViewMargin absPos"   >
+<div class='yibuFrameContent overflow_hidden code_Style1_Item0' style='height:28px;width:106px;'>
+        <div id='view_code_52_843_code' >
+            <style>
+body{width:100%;}
+</style>
+        </div>
+</div>
+</div>
+</div>
+      </div>
+    </div>
+      </div>
+</div>
+
+            <div id="Poweredby" style="text-align: center; width: 100%; margin-top: 4px; font-size: 10px;">
+            Powered by <a target="_blank" href="../www.clouddream.net/index.htm">CloudDream</a>
+        </div>
+
+    <script type="text/javascript">
+        $(function() {
+            if ("True" == "False") {
+                $.ajax({
+                    url: "../clouddreams.wezhan.cn/PageVisit/Index/index.htm",
+                    data: { UrlPath: "sy", pageTitle: "首页", pageId: "1265", siteId: "88743" },
+                    dataType: 'jsonp',
+                    jsonp: 'callback',
+                    type: 'get',
+                    success: function() {},
+                    fail: function() {
+                        alert("fail");
+                    }
+                })
+            }
+
+            if ( 0 > 0) {
+                window.location.href = "/RunTime/DownLoadFileVerifyToken/0" + "?timespan=&token=";
+            }
+
+        })
+
+    </script>
+    <script language="javascript" type="text/javascript">
+        function yiburecomputeLayoutHeight() {
+            if (typeof (setLayoutHeight) != "undefined") {
+                ReComputeVisibleSmartViewTop(setLayoutHeight);
+            } else {
+                ReComputeVisibleSmartViewTop();
+            }
+        }
+
+        $(function() {
+            if ("True" == "False" && "false" == "true") {
+                $(document.body).bind('contextmenu', function() { return false; });
+            }
+            $('.yibuAnimate').smanimate();
+            $("img.lazyload").lazyload({ skip_invisible: false, effect: "fadeIn", failure_limit: 15, threshold: 100 });
+            var $sm_all_autoHViews = $(".main div[class^='yibuSmartViewMargin absPos']")
+                .filter(function() {
+                    var $this = $(this);
+                    var child = $this.children(".yibuFrameContent");
+                    return child.hasClass("overflow_hidden") == false &&
+                        child.hasClass("overflow_auto") == false &&
+                        $this.css("min-height") != "0px";
+                });
+            var $sm_all_imgs = $sm_all_autoHViews.find('img').filter(function() {
+                return !$(this).hasClass('lazyload');
+            });
+            //检测是否新闻固定模板标识对象
+            var newsFixTemlateFlagObj = $('#news_template_content_sm');
+            var productFixTemplateFlagObj = $('#product_template_sm_flag');
+            if ($sm_all_imgs.length > 0 && newsFixTemlateFlagObj.length==0 && productFixTemplateFlagObj.length==0) {
+                $sm_all_imgs.each(function() {
+                    var $this = $(this);
+                    $this.on("load", function() {
+                        yiburecomputeLayoutHeight();
+                    });
+                });
+            }
+            yiburecomputeLayoutHeight();
+        });
+
+    </script>
+
+
+    <script language="javascript" type="text/javascript">
+        $(function(){
+            var $alHViews = $(".yibuFrameContent div[class^='yibuSmartViewMargin absPos'] .AR");
+            var dateTypes = "";
+            var dataTypeArr = [];
+            var postObject = {};
+            if($alHViews.length>0){
+                //过滤重复类型
+                $alHViews.each(function(){
+                    var curId = $(this).attr("data-dt");
+                    dateTypes=addStrToArrayString(curId,dateTypes);
+                });
+                dataTypeArr = dateTypes.split(',');
+            }
+            //拼装参数
+            for(var i=0;i<dataTypeArr.length;i++){
+                var listIds ="";
+                $alHViews.each(function(){
+                    var dateType = $(this).attr("data-dt");
+                    if(dateType == dataTypeArr[i]){
+                        listIds=addStrToArrayString($(this).attr("data-key"),listIds);
+                    }
+                });
+                postObject["postDatas[" + i + "].DataType"] = dataTypeArr[i];
+                postObject["postDatas[" + i + "].DataKey"] =listIds;
+            }
+            //统一处理数据逻辑
+            $.ajax({
+                url: '/getIdHitDic',
+                data: postObject,
+                dataType: "json",
+                type: "POST",
+                //traditional: true,
+                success: function (datas) {
+                    //遍历Hit dom、then赋值
+                    $alHViews.each(function(){
+                        var $cur = $(this);
+                        var curType = $(this).attr("data-dt");
+                        var curId = $(this).attr("data-key");
+                        for(var i=0;i<datas.length;i++){
+                            var dataType = datas[i].DataType;
+                            //类型匹配
+                            if(curType==dataType){
+                                var idHits = datas[i].ListIdHits;
+                                for(j=0;j<idHits.length;j++){
+                                    if(curId == idHits[j].Id){
+                                        $cur.html(idHits[j].Hit);
+                                    }
+                                }
+                            }
+                        }
+                    });
+                }
+            });
+        })
+    </script>
+
+</body>
+</html>
