@@ -9,13 +9,13 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <meta name="format-detection" content="telephone=no, email=no" />
         <link rel="stylesheet" href="/Plugins/Designer/Content/css/jquery-ui.min.css" />
-    <link rel="icon" href="/88743_favicon.ico" />
-    <link rel="shortcut icon" href="/88743_favicon.ico" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="bookmark" href="/88743_favicon.ico" />
 
-    <title>ZANVR|知感科技|感知实验室</title>
+    <title>梦境VR+</title>
     <meta name="description" content="" />
-    <meta name="keywords" content="zanvr，知感科技，感知实验室，VR职教实训室，VR科普实验室，VR虚拟仿真实验室" />
+    <meta name="keywords" content="mjsdvr，梦境科技，梦境实验室，VR职教实训室，VR科普实验室，VR虚拟仿真实验室" />
 
     <link rel="stylesheet" href="/Plugins/Designer/Content/css/base.pc.css" type="text/css" />
     <link href="/Plugins/Designer/Content/mw-iconfont/iconfont.css" rel="stylesheet" />
@@ -93,7 +93,7 @@
                             color: #FFF;
                         }
         </style>
-        <div class="viewSwitch" style="display:">
+        <div class="viewSwitch" style="display:none">
             <div class="deviceSwitch">
                 <div class="device-pc" data-device="pc" title="点击预览PC版">
                     <span class="ym-iconfont-web"></span>
@@ -161,7 +161,7 @@ background-color:;
 
 
     <div style="*z-index:11;*position:relative;width:100%;height:953px;margin-left:auto;margin-right:auto;background-color:">
-      <div class="header page_header yibuLayout_tempPanel" style="width:1180px;height:953px;background-color:;;">
+      <div class="header page_header yibuLayout_tempPanel" style="width:100%;height:953px;background-color:;;">
            <div class='runTimeflowsmartView'><div  id="view_photoalbum_32_843" class="yibuSmartViewMargin absPos"   >
 <div class='yibuFrameContent overflow_hidden photoalbum_Style2_Item0 view_photoalbum_32_843_Style2_Item0' style='height:950px;width:1180px;'><div class="w_slider_2 renderfullScreen w_slider_2_32">
 
@@ -257,7 +257,7 @@ background-color:;
 
 </script></div>
 </div>
-<div  id="view_banner_33_843" class="yibuSmartViewMargin absPos yibulocked"   >
+<div  id="view_banner_33_843" class="yibuSmartViewMargin absPos yibulocked"  style="height:66px;" >
 <div class='yibuFrameContent banner_Style1_Item0 view_banner_33_843_Style1_Item0'>    <div id="fullScreen_view_banner_33_843" class="w_container_wrap renderfullScreen" ></div>
     <script>
     $(function () {
@@ -453,8 +453,7 @@ background-color:;
         slideMenu("nav_" + 'view_navigator_38_843');
         jQuery("#nav_" + 'view_navigator_38_843').parent("div").css("overflow", "visible");
         var isDivider = true;
-
-        //子导航下边框显示不出来的fix
+              //子导航下边框显示不出来的fix
         $("#nav_" + 'view_navigator_38_843').children("li").each(function () {
             var Li_height = $(this).height();
             $("li", this).height(Li_height);
@@ -525,6 +524,11 @@ background-color:;
         var bannerheight = $("#view_banner_33_843").css("height");
         $("#view_banner_33_843").children(".yibuFrameContent").css("height", bannerheight);
     };
+    $(function(){
+      setTimeout(function(){
+        $(window).resize();
+      });
+    });
 </script></div>
 </div>
 </div>
@@ -1056,7 +1060,7 @@ background-color:;
 </style>
 <div id='view_text_37_1265_txt'   style="cursor:default; height:100%; width:100%;"  >
     <div class="editableContent" style="line-height:1.5;">
-        <p style="line-height: 2em;"><font face="arial, helvetica, sans-serif">邮箱：</font></p><p style="line-height: 2em;"><span style="font-family: arial, helvetica, sans-serif;">info@zanvr.com</span></p>
+        <p style="line-height: 2em;"><font face="arial, helvetica, sans-serif">邮箱：</font></p><p style="line-height: 2em;"><span style="font-family: arial, helvetica, sans-serif;">info@mjsdvr.com</span></p>
     </div>
 </div>
 <script>
@@ -1185,7 +1189,7 @@ background-color:;
 </style>
 <div id='view_text_36_843_txt'   style="cursor:default; height:100%; width:100%;"  >
     <div class="editableContent" style="line-height:1.5;">
-        <p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; text-decoration: none; color: rgb(255, 255, 255);">北京知感科技有限公司版权所有&nbsp;</span></p>
+        <p><span style="font-family: 微软雅黑, &#39;Microsoft YaHei&#39;; text-decoration: none; color: rgb(255, 255, 255);">北京梦境时代科技有限公司&nbsp;</span></p>
     </div>
 </div>
 <script>
